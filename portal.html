@@ -1,0 +1,1640 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Montessori Child Home Nursery</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Work+Sans:wght@400;500;600&family=Amiri:wght@400;700&family=Tajawal:wght@400;500;700&display=swap');
+
+  :root{
+    --paper:#EAF4FB; --paper-deep:#D6E9F5; --card:#FFFFFF;
+    --ink:#33404A; --ink-soft:#6E7F8D; --ink-faint:#9AAAB6; --line:#C9E0EE;
+    --wood:#F2A6C1; --wood-dark:#D97FA0;
+    --red:#C05C50; --red-bg:#F3DEDA;
+    --green:#6E8F4E; --green-bg:#E4EAD4;
+    --pink:#C97E9E; --pink-bg:#F1DCE6;
+    --yellow:#C99A34; --yellow-bg:#F1E4C4;
+    --blue:#5C86A3; --blue-bg:#DBE6ED;
+    --violet:#7C6A9C; --violet-bg:#E3DCEC;
+    --radius:10px; --shadow:0 2px 6px rgba(51,64,74,0.12);
+    --font-heading:'Fraunces', serif; --font-body:'Work Sans', sans-serif;
+    --w-semibold:600; --label-transform:uppercase; --label-spacing:0.05em; --sub-style:italic;
+    --body-lh:1.55;
+  }
+  html[dir="rtl"]{
+    --font-heading:'Amiri', serif; --font-body:'Tajawal', sans-serif;
+    --w-semibold:700; --label-transform:none; --label-spacing:0; --sub-style:normal;
+    --body-lh:1.75;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  html{
+    background:url('data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAcFBQYFBAcGBgYIBwcICxILCwoKCxYPEA0SGhYbGhkWGRgcICgiHB4mHhgZIzAkJiorLS4tGyIyNTEsNSgsLSz/2wBDAQcICAsJCxULCxUsHRkdLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCw/8AAEQgAZABkAwEiAAIRAQMRAf/EAB8AAAEFAQEBAQEBAAAAAAAAAAABAgMEBQYHCAkKC//EALUQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+v/EAB8BAAMBAQEBAQEBAQEAAAAAAAABAgMEBQYHCAkKC//EALURAAIBAgQEAwQHBQQEAAECdwABAgMRBAUhMQYSQVEHYXETIjKBCBRCkaGxwQkjM1LwFWJy0QoWJDThJfEXGBkaJicoKSo1Njc4OTpDREVGR0hJSlNUVVZXWFlaY2RlZmdoaWpzdHV2d3h5eoKDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uLj5OXm5+jp6vLz9PX29/j5+v/aAAwDAQACEQMRAD8A9/oorL8QeIdM8L6TLqOq3AhgTgAcs7HooHc/5zXBOcYRcpOyR6NOnKpJQirt7GpRXhus/H27nkddI0uKCHqrXTF3PsQPl/nXBar8SPFmq58/W7iJT/DbYiA/75Az+NeVWzjDU3aN5eh7VDh/GVVeSUV5v/K59YZFGRXxfNq2o3ByxHNK3lNRXlPPX0pfmz2Y8Kr7dX7l/wAE+z/mo5r4wF9djoxWTFq18qkfax/33VLPl1p/mQ+E5f8AP+H/AATuvBw0dEyPPtdOe+8ZavO4/GfxLGwEmm6Y8YHOA6k/Xk4rlqvhzeJ4M/rMv/kV+ovg9YHwZbF4tsQxupt80eQXfnhVHy4H41Wo6PtGvKzTPjKPjJmtSSU8LTt5c1/vv+g6iiivrz8dCiiigDzT496//AGV4LTT4pAtxqUvlYzz5S/M/wDQD8a+bK9C+M/iBdc8bzQxPuttOX7Kmp/DjA/HFee1+f5vifb4uT6LRfL/AILP2fhbAfUcrpxa96XvP1e33Kx0PgfxLL4S8U2WqozeSj7LhF/jiPDD9c/UCvsK1uYb21hurdxJDMgkjcdGUjIP5V8IV774K8fro/wf1i5eXOoWTfZLQE8lpBmM/RRvP0Ar6ThfMlR56NR2VuZeVt/wPjuNsjeIVPFUY3l8L820vzf5nsWr6xY6DpVxqWpXCW9pAu6SRugH9SewHU181/EX4wal4qeXT9Ld7HRs42Ken2j3f+g6D3rl/GHjXVfGeom61CXbCpPkWyH5Il9vU+p6/lXPV5eaZ5UxTdOi7Q/Ff8AA/rzPYyPhqjgUqtdc1T8I+n+f5BXsPwx+D0/iSOHWNdV4NKPzRQdHuB6/wCyv6n26HovA/gPTF0Kx8W+I2ln0z7SEt7CFctK+7GT7dcDjOOoxXqNz8ZfDNjEsFrpN9siG1UWNEQAe2eK5cpymnKKxGNqKMd0r6v/AIH5nTnedVYzeEy2i5z2btovLzf5FLTfDGiaHapb6dpNlbxr02Qrk/UkZP41Wv8AwB4T1QET+H9OyerRQiJj+K4NUJfjX4V6RreP/txgP61Sk+NmiA4TT79vqEH/ALNX0k8fkzhySlBrtb/gHxsMt4iVRVIwqKXe7/Vm3H8N/DVjbypptrPYSSKV82C6l3D8yR+lc3rfhnxHosDXFpcy67Zryyk/6Sg9x0f8Ofasa9+PVvggaBK5HTfdBf5Ka5rUfjnr9wCtnZWNsD0Yhnb8ycfpXBjM4yWNPk92Xkl+ux6WW8P8SzqqfvR85N/gm7lTVJIrOOWaeQRRJlnZzgKPU15L4l8dJKJINPHmZyDMwwPwFYni7VfEHibUmvNS+0Sqpwq7SI4h6KOgrEXQ9UdcrYzsPXYa/O8fmc8VLlox5Yr7z9wybhqjltNVMTUUpvzsl/n5v7hjuXcsxJJOSTX0X8HYYE+HdrLGoDyzTNKR3IcgZ/AD8q+eGtLmEsJIJEK9QVIxXsvwK1kNb6nozPylJlgU55Vjhh+DFf++qMjko4tKfVWHxVCVXKn7PXlab8lZq/wCJ6nqmi6drNsbfULOK4jPTeuSPoeoP0rzfxL8I2VXm0G6z1IguDz9AR/UfjXqNFfWYnBUMSrVI3PyzL83xmXy5sPUcey6P1R8mavp2paJdG21OymtZQfuyLgH3B6EfSs4Nmvriezt7uIxXEEcsZ6q6gg/nXG638IvC+r73itnsJm/isyEH/fJyv6V83i+HasfeoTv5PT8T9GyzjnDzXLjKfK+8dV923+Z8y0V6drfwR8QWDM2n3Fpfxg8AsY3P4H5f/HqzdF+CHiPUsvfNb6bGDgeafMc/goI/M18/LKcXGXK6b/L8z7enxHllSHtI4iPzdn9zszz2vY/gV4TmuNVn8SXEZW3t1MVsSPvyEYYj6Dj8T6VN4a+Cui2t3G+t309/GDkxRr5Kt7EgkkfQivXbaGO3gjhhjWOKNQqIowFAGAAK9zJ8jrQqrEV1a217v0PkOKuLcNVw08Dg3zc2jls15Lu35lqiiivszV/wDklWr/APX9F/6EK+dK9y+M2vrpXgxNMjfE+pShcA8+Wp3MfzCj8a8Nr884jqxnjFFdIr87n7VwZQnTy1zktZSb+Vkl+TCiiivBPtj/2Q==') center center / cover no-repeat fixed;
+  }
+  body{
+    background:radial-gradient(ellipse at top left, rgba(255,255,255,0.35), transparent 60%), linear-gradient(180deg, rgba(234,244,251,0.72), rgba(214,233,245,0.8));
+    color:var(--ink); font-family:var(--font-body); min-height:100vh; line-height:var(--body-lh);
+  }
+  h1,h2,h3{font-family:var(--font-heading); margin:0;}
+  .app-shell{max-width:1100px; margin:0 auto; padding:20px 18px 60px;}
+  .brand-row{display:flex; align-items:center; justify-content:space-between; gap:12px; flex-wrap:wrap; margin-bottom:18px;}
+  .brand{display:flex; align-items:center; gap:10px;}
+  .brand-mark{width:34px; height:34px; border-radius:50%; background:var(--wood); color:#fff; display:flex; align-items:center; justify-content:center; font-family:var(--font-heading); font-weight:var(--w-semibold); font-size:16px; flex:none;}
+  .brand-name{font-family:var(--font-heading); font-weight:var(--w-semibold); font-size:19px;}
+  .brand-sub{font-family:var(--font-heading); font-style:var(--sub-style); font-size:13px; color:var(--ink-soft);}
+
+  .lang-switch{display:flex; gap:4px; background:var(--card); border:1px solid var(--line); border-radius:20px; padding:3px;}
+  .lang-switch button{font-family:'Work Sans',sans-serif; font-size:12.5px; font-weight:500; padding:5px 12px; border-radius:16px; border:none; background:transparent; color:var(--ink-soft); cursor:pointer;}
+  .lang-switch button.active{background:var(--wood); color:#fff;}
+
+  .btn{font-family:var(--font-body); font-weight:500; font-size:14px; padding:9px 16px; border-radius:8px; border:1px solid var(--wood-dark); background:var(--wood); color:#fff; cursor:pointer;}
+  .btn:hover{background:var(--wood-dark);}
+  .btn.ghost{background:transparent; color:var(--ink-soft); border:1px solid var(--line);}
+  .btn.ghost:hover{border-color:var(--ink-soft); color:var(--ink);}
+  .btn.danger{background:transparent; color:var(--red); border:1px solid var(--red);}
+  .btn.danger:hover{background:var(--red); color:#fff;}
+  .btn.small{padding:5px 10px; font-size:12.5px; border-radius:6px;}
+  .btn:disabled{opacity:0.5; cursor:not-allowed;}
+
+  input[type=text],input[type=password],input[type=date],input[type=number],select,textarea{
+    font-family:var(--font-body); font-size:14.5px; padding:8px 10px; border:1px solid var(--line);
+    border-radius:8px; background:#fff; color:var(--ink); width:100%;
+  }
+  input[type=date],input[type=number]{direction:ltr; text-align:start;}
+  textarea{min-height:64px; resize:vertical;}
+  label.field-label{font-size:12px; text-transform:var(--label-transform); letter-spacing:var(--label-spacing); color:var(--ink-soft); font-weight:500; display:block; margin-bottom:5px;}
+  .field{margin-bottom:12px;}
+  .row{display:flex; gap:12px; flex-wrap:wrap;}
+  .row > .field{flex:1; min-width:160px;}
+
+  .card{background:var(--card); border:1px solid var(--line); border-radius:var(--radius); box-shadow:var(--shadow); padding:18px 20px; margin-bottom:18px;}
+  .card h3{font-size:17px; margin-bottom:4px;}
+  .muted{color:var(--ink-soft); font-size:13px;}
+
+  .tabs{display:flex; gap:8px; flex-wrap:wrap; margin:18px 0;}
+  .tab-btn{font-family:var(--font-body); font-size:13.5px; font-weight:500; padding:8px 14px; border-radius:20px; border:1px solid var(--line); background:var(--card); color:var(--ink-soft); cursor:pointer;}
+  .tab-btn.active{background:var(--wood); color:#fff; border-color:var(--wood-dark);}
+
+  table.data-table{width:100%; border-collapse:collapse; font-size:13.5px;}
+  .data-table th{text-align:start; font-size:11.5px; text-transform:var(--label-transform); letter-spacing:var(--label-spacing); color:var(--ink-soft); border-bottom:2px solid var(--line); padding:8px 8px;}
+  .data-table td{padding:9px 8px; border-bottom:1px solid var(--line); vertical-align:top; unicode-bidi:plaintext;}
+  .data-table tr:last-child td{border-bottom:none;}
+
+  .badge{display:inline-block; font-size:11.5px; font-weight:600; padding:3px 9px; border-radius:20px;}
+  .badge.green{background:var(--green-bg); color:var(--green);}
+  .badge.yellow{background:var(--yellow-bg); color:var(--yellow);}
+  .badge.red{background:var(--red-bg); color:var(--red);}
+  .badge.blue{background:var(--blue-bg); color:var(--blue);}
+  .badge.violet{background:var(--violet-bg); color:var(--violet);}
+
+  .modal-overlay{position:fixed; inset:0; background:rgba(51,42,31,0.45); display:flex; align-items:flex-start; justify-content:center; z-index:60; padding:40px 16px; overflow-y:auto;}
+  .modal{background:var(--card); border-radius:var(--radius); padding:22px 24px; max-width:560px; width:100%; box-shadow:0 10px 34px rgba(0,0,0,0.25);}
+  .modal-head{display:flex; justify-content:space-between; align-items:center; margin-bottom:14px;}
+  .modal-close{cursor:pointer; color:var(--ink-soft); font-size:20px; line-height:1; background:none; border:none;}
+
+  .tile{font-family:var(--font-body); font-size:13px; padding:7px 12px; border-radius:20px; border:1px solid var(--line); background:#fff; color:var(--ink-soft); cursor:pointer;}
+  .tile.on{background:var(--wood); color:#fff; border-color:var(--wood-dark);}
+  .tile-row{display:flex; gap:8px; flex-wrap:wrap;}
+
+  .login-wrap{max-width:420px; margin:70px auto 40px; padding:0 16px;}
+  .role-tabs{display:flex; gap:6px; margin-bottom:18px;}
+  .role-tabs .tab-btn{flex:1; text-align:center;}
+  .top-bar{display:flex; justify-content:space-between; align-items:center; gap:12px; flex-wrap:wrap; margin-bottom:6px;}
+  .top-bar-actions{display:flex; align-items:center; gap:10px;}
+  .who{font-size:13px; color:var(--ink-soft);}
+  .who b{color:var(--ink);}
+  .empty-note{color:var(--ink-faint); font-style:var(--sub-style); font-size:13.5px; padding:10px 0;}
+  hr.sep{border:none; border-top:1px solid var(--line); margin:16px 0;}
+  .qbuilder-q{border:1px dashed var(--line); border-radius:8px; padding:12px; margin-bottom:10px;}
+  .code-pill{font-family:monospace; font-size:14px; background:var(--paper-deep); border:1px solid var(--line); border-radius:6px; padding:3px 8px; letter-spacing:0.05em; direction:ltr; display:inline-block; unicode-bidi:isolate;}
+  .ltr{direction:ltr; display:inline-block; unicode-bidi:isolate;}
+  .gallery-grid{display:grid; grid-template-columns:repeat(auto-fill,minmax(160px,1fr)); gap:14px; margin-top:12px;}
+  .gallery-item{background:#fff; border:1px solid var(--line); border-radius:10px; overflow:hidden; box-shadow:var(--shadow);}
+  .gallery-item img{width:100%; height:120px; object-fit:cover; display:block; background:var(--paper-deep);}
+  .gallery-item .gi-body{padding:8px 10px;}
+  .gallery-item .gi-tag{font-size:11px; color:var(--ink-soft); text-transform:var(--label-transform); letter-spacing:var(--label-spacing);}
+  .gallery-item .gi-caption{font-size:13px; margin-top:2px;}
+  .home-hero{background:linear-gradient(135deg, var(--paper-deep), var(--pink-bg)); border-radius:var(--radius); padding:26px 24px; margin-bottom:18px;}
+  .home-hero h2{font-size:24px; margin-bottom:6px;}
+
+  @media print{
+    body *{visibility:hidden;}
+    #printArea, #printArea *{visibility:visible;}
+    #printArea{position:absolute; left:0; top:0; width:100%;}
+  }
+  .p-page{font-family:var(--font-body); color:#2A2118; padding:20px;}
+  .p-brand{display:flex; align-items:center; gap:8px; margin-bottom:6px;}
+  .p-brand-mark{width:26px; height:26px; border-radius:50%; background:#2A2118; color:#fff; display:flex; align-items:center; justify-content:center; font-family:var(--font-heading); font-weight:var(--w-semibold); font-size:13px;}
+  .p-brand-name{font-family:var(--font-heading); font-weight:var(--w-semibold); font-size:14px;}
+  .p-title{font-family:var(--font-heading); font-weight:var(--w-semibold); font-size:22px; margin-top:8px;}
+  .p-sub{font-family:var(--font-heading); font-style:var(--sub-style); font-size:13px; color:#6E6151; margin-bottom:14px;}
+  .p-meta{display:flex; gap:18px; flex-wrap:wrap; font-size:13px; margin-bottom:14px;}
+  .p-section{margin-bottom:16px;}
+  .p-section h3{font-size:14px; border-bottom:1px solid #DCCEA9; padding-bottom:4px; margin-bottom:8px;}
+  .p-checklist{display:flex; flex-wrap:wrap; gap:10px;}
+  .p-check{display:flex; align-items:center; gap:6px; font-size:13px;}
+  .p-box{width:12px; height:12px; border:1px solid #6E6151; display:inline-block;}
+  .p-box.filled{background:#6E6151;}
+  .p-table{width:100%; border-collapse:collapse; font-size:13px;}
+  .p-table td{padding:4px 6px; border-bottom:1px solid #EAE0C4; unicode-bidi:plaintext;}
+  .p-label{font-weight:600;}
+  .p-grid2{display:grid; grid-template-columns:1fr 1fr; gap:8px;}
+  .p-field{font-size:13px; margin-bottom:4px;}
+  .p-empty{color:#9A8E7A; font-style:var(--sub-style);}
+  .p-note-box{border:1px solid #DCCEA9; border-radius:6px; padding:8px; font-size:13px; min-height:30px; margin-bottom:8px;}
+  .p-footer{font-size:11px; color:#9A8E7A; margin-top:10px;}
+</style>
+</head>
+<body>
+
+<div class="app-shell">
+  <div class="brand-row" id="brandRow"></div>
+  <div id="loginScreen"></div>
+  <div id="appScreen" style="display:none;">
+    <div class="top-bar">
+      <div class="who" id="whoBar"></div>
+      <div class="top-bar-actions">
+        <div id="langSwitchApp"></div>
+        <button class="btn ghost small" id="logoutBtn" onclick="logout()"></button>
+      </div>
+    </div>
+    <div class="tabs" id="tabNav"></div>
+    <div id="mainArea"></div>
+  </div>
+</div>
+
+<div id="modalRoot"></div>
+<div id="printArea"></div>
+
+<script>
+/* ===================== STORAGE LAYER ===================== */
+(function(){
+  const hasCloudStorage = (typeof window.storage !== 'undefined') && window.storage && typeof window.storage.get === 'function';
+  const localBackend = {
+    async get(key){ const raw = window.localStorage.getItem(key); if(raw===null) throw new Error('not found'); return {key,value:raw,shared:false}; },
+    async set(key,value){ window.localStorage.setItem(key,value); return {key,value,shared:false}; },
+    async delete(key){ window.localStorage.removeItem(key); return {key,deleted:true,shared:false}; },
+    async list(prefix){ const keys=[]; for(let i=0;i<window.localStorage.length;i++){ const k=window.localStorage.key(i); if(!prefix||k.indexOf(prefix)===0) keys.push(k); } return {keys,prefix,shared:false}; }
+  };
+  window.__store = hasCloudStorage ? window.storage : localBackend;
+  window.__storeIsShared = hasCloudStorage;
+})();
+
+async function getJSON(key, fallback){
+  try{ const r = await window.__store.get(key, true); return r ? JSON.parse(r.value) : fallback; }
+  catch(e){ return fallback; }
+}
+async function setJSON(key, value){
+  try{ await window.__store.set(key, JSON.stringify(value), true); return true; }
+  catch(e){ return false; }
+}
+function uid(){ return Date.now().toString(36) + Math.random().toString(36).slice(2,7); }
+function esc(s){ const d=document.createElement('div'); d.textContent = (s===undefined||s===null)?'':String(s); return d.innerHTML; }
+function todayISO(){ const d=new Date(); return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0'); }
+function randomCode(){ const chars='ABCDEFGHJKLMNPQRSTUVWXYZ23456789'; let s=''; for(let i=0;i<6;i++) s+=chars[Math.floor(Math.random()*chars.length)]; return s; }
+
+/* ===================== LANGUAGE / TRANSLATIONS ===================== */
+/* Every UI string as [English, Arabic]. Stored data (names, dates, notes
+   admins/teachers/parents type in) is never translated — only interface copy. */
+const STRINGS = {
+  appTitle: ['Montessori Child Home Nursery', 'حضانة مونتيسوري بيت الطفل'],
+  appTagline: ['A prepared place for every child, one day at a time', 'بيئة مُعدَّة لكل طفل، يومًا بعد يوم'],
+  brandMark: ['M', 'م'],
+  langEn: ['English', 'English'],
+  langAr: ['العربية', 'العربية'],
+
+  roleAdmin: ['Admin', 'المدير'],
+  roleTeacher: ['Teacher', 'المعلّمة'],
+  roleParent: ['Parent', 'ولي الأمر'],
+  adminLoginTitle: ['Admin login', 'دخول المدير'],
+  adminLoginDesc: ['Full access to the school.', 'صلاحية كاملة على المدرسة.'],
+  passwordLabel: ['Password', 'كلمة المرور'],
+  usernameLabel: ['Username', 'اسم المستخدم'],
+  loginBtn: ['Log in', 'تسجيل الدخول'],
+  teacherLoginTitle: ['Teacher login', 'دخول المعلّمة'],
+  teacherLoginDesc: ["Ask your admin if you don't have an account yet.", 'إن لم يكن لديكِ حساب بعد، تواصلي مع المدير.'],
+  yourNameLabel: ['Your name', 'اسمكِ'],
+  noTeacherAccountsOpt: ['No teacher accounts yet — ask your admin', 'لا توجد حسابات معلّمات بعد — تواصلي مع المدير'],
+  parentLoginTitle: ['Parent access', 'دخول ولي الأمر'],
+  parentLoginDesc: ['Log in with the username and password your admin gave you.', 'سجّل الدخول باسم المستخدم وكلمة المرور اللذين منحهما لك المدير.'],
+  parentOrCode: ['Or, if you were given a family code instead:', 'أو، إن كان لديك رمز العائلة بدلًا من ذلك:'],
+  familyCodeLabel: ['Family code', 'رمز العائلة'],
+  viewChildBtn: ['View my child', 'عرض بيانات طفلي'],
+  aboutUsTitle: ['About us', 'من نحن'],
+  errIncorrectPassword: ['Incorrect password.', 'كلمة المرور غير صحيحة.'],
+  errNoAccountSelected: ['No account selected.', 'لم يتم اختيار حساب.'],
+  errCodeNotRecognized: ['That code was not recognized. Check with your teacher.', 'هذا الرمز غير معروف. من فضلك راجع معلّمة الفصل.'],
+  errIncorrectUserPass: ['Incorrect username or password.', 'اسم المستخدم أو كلمة المرور غير صحيحة.'],
+
+  signedInAsAdmin: ['Signed in as', 'تم تسجيل الدخول بصفة'],
+  adminWord: ['Admin', 'مدير'],
+  teacherWord: ['Teacher', 'معلّمة'],
+  viewingChild: ['Viewing', 'تعرض حساب'],
+  accountWord: ["'s account", ''],
+  parentViewLabel: ['Parent view', 'واجهة ولي الأمر'],
+  logoutBtn: ['Log out', 'تسجيل الخروج'],
+  loadingText: ['Loading...', 'جارٍ التحميل...'],
+  removeBtn: ['Remove', 'حذف'],
+  saveBtn: ['Save', 'حفظ'],
+  savedMsg: ['Saved.', 'تم الحفظ.'],
+  saveFailedMsg: ['Save failed — try again.', 'فشل الحفظ — حاول مرة أخرى.'],
+
+  tabHome: ['Home', 'الرئيسية'],
+  tabTeachers: ['Teachers', 'المعلّمات'],
+  tabParents: ['Parents', 'أولياء الأمور'],
+  tabClasses: ['Classes', 'الفصول'],
+  tabChildren: ['Children', 'الأطفال'],
+  tabMaterials: ['Materials', 'المواد'],
+  tabQuizzes: ['Quizzes', 'الاختبارات'],
+  tabHomework: ['Homework', 'الواجبات'],
+  tabReports: ['Daily Reports', 'التقارير اليومية'],
+  tabGallery: ['Gallery', 'معرض الصور'],
+
+  teachersTitle: ['Teacher accounts', 'حسابات المعلّمات'],
+  teachersDesc: ['Only admin can add or remove teachers.', 'المدير وحده من يمكنه إضافة أو حذف المعلّمات.'],
+  noTeachersYet: ['No teachers yet. Add the first one below.', 'لا توجد معلّمات بعد. أضف أول معلّمة من الأسفل.'],
+  thName: ['Name', 'الاسم'],
+  thPassword: ['Password', 'كلمة المرور'],
+  resetPasswordBtn: ['Reset password', 'إعادة تعيين كلمة المرور'],
+  addTeacherTitle: ['Add a teacher', 'إضافة معلّمة'],
+  nameLabel: ['Name', 'الاسم'],
+  pwPlaceholderDefault: ['Default: 1234', 'الافتراضية: 1234'],
+  addTeacherBtn: ['Add teacher', 'إضافة المعلّمة'],
+  dangerZoneTitle: ['Danger zone', 'منطقة الخطر'],
+  dangerZoneDesc: ['Permanently erases every teacher, class, child, material, quiz, homework record, and daily report on the site. This cannot be undone.', 'يمحو نهائيًا كل معلّمة وفصل وطفل ومادة واختبار وسجل واجب وتقرير يومي على الموقع. لا يمكن التراجع عن هذا الإجراء.'],
+  deleteAllBtn: ['Delete all data', 'حذف كل البيانات'],
+  confirmDeleteAll: ['This will permanently erase ALL data on the site — every teacher, class, child, material, quiz, homework record, and daily report. This cannot be undone. Continue?', 'سيؤدي هذا إلى محو جميع بيانات الموقع نهائيًا — كل معلّمة وفصل وطفل ومادة واختبار وسجل واجب وتقرير يومي. لا يمكن التراجع. هل تريد المتابعة؟'],
+  deleteConfirmPrompt: ['Type DELETE to confirm:', 'اكتب DELETE للتأكيد:'],
+  deleteCancelled: ['Cancelled — nothing was deleted.', 'تم الإلغاء — لم يُحذف أي شيء.'],
+  deletingText: ['Deleting...', 'جارٍ الحذف...'],
+  deletedAlert: ['All data has been erased.', 'تم حذف جميع البيانات.'],
+  deleteError: ['Something went wrong — try again.', 'حدث خطأ ما — حاول مرة أخرى.'],
+  enterNameMsg: ['Enter a name.', 'أدخل الاسم.'],
+  newPwPromptFor: ['New password for', 'كلمة مرور جديدة لـ'],
+  confirmRemoveTeacher: ['Remove this teacher? Their classes will stay but will need reassigning.', 'حذف هذه المعلّمة؟ ستبقى فصولها لكنها ستحتاج إلى إسنادها لمعلّمة أخرى.'],
+
+  parentsTitle: ['Parent accounts', 'حسابات أولياء الأمور'],
+  parentsDesc: ['Only admin can add or remove parent accounts.', 'المدير وحده من يمكنه إضافة أو حذف حسابات أولياء الأمور.'],
+  noParentAccounts: ['No parent accounts yet.', 'لا توجد حسابات أولياء أمور بعد.'],
+  thUsername: ['Username', 'اسم المستخدم'],
+  thChild: ['Child', 'الطفل'],
+  addParentTitle: ['Add a parent account', 'إضافة حساب ولي أمر'],
+  createChildFirst: ['Create a child account first.', 'أنشئ حساب طفل أولًا.'],
+  childLabel: ['Child', 'الطفل'],
+  addParentBtn: ['Add parent account', 'إضافة الحساب'],
+  enterUsernameChild: ['Enter a username and choose a child.', 'أدخل اسم المستخدم واختر الطفل.'],
+  usernameTaken: ['That username is already taken.', 'اسم المستخدم هذا مستخدم بالفعل.'],
+  confirmRemoveParent: ['Remove this parent account?', 'حذف حساب ولي الأمر هذا؟'],
+
+  classesTitle: ['Classes', 'الفصول'],
+  noClassesYet: ['No classes yet.', 'لا توجد فصول بعد.'],
+  thClass: ['Class', 'الفصل'],
+  thTeacher: ['Teacher', 'المعلّمة'],
+  addClassTitle: ['Add a class', 'إضافة فصل'],
+  classNameLabel: ['Class name', 'اسم الفصل'],
+  teacherLabel: ['Teacher', 'المعلّمة'],
+  addClassBtn: ['Add class', 'إضافة الفصل'],
+  addTeacherFirstMsg: ['Add a teacher first.', 'أضف معلّمة أولًا.'],
+  confirmRemoveClass: ['Remove this class? Children in it will need reassigning.', 'حذف هذا الفصل؟ سيحتاج الأطفال المسجّلون فيه إلى إسنادهم لفصل آخر.'],
+
+  childrenTitle: ['Children', 'الأطفال'],
+  noChildrenYet: ['No children yet.', 'لا يوجد أطفال بعد.'],
+  thFamilyCode: ['Family code', 'رمز العائلة'],
+  familyCodeHint: ['Give the family code to parents — they use it to log into the Parent view.', 'سلّم رمز العائلة لولي الأمر — يستخدمه للدخول إلى واجهة ولي الأمر.'],
+  addChildTitle: ['Add a child', 'إضافة طفل'],
+  createClassFirst: ['Create a class first.', 'أنشئ فصلًا أولًا.'],
+  childNameLabel: ["Child's name", 'اسم الطفل'],
+  classLabel: ['Class', 'الفصل'],
+  createChildBtn: ['Create child account', 'إنشاء حساب الطفل'],
+  confirmRemoveChild: ['Remove this child? Their reports and records will remain stored but the account will disappear from lists.', 'حذف هذا الطفل؟ ستبقى تقاريره وسجلاته محفوظة، لكن الحساب سيختفي من القوائم.'],
+
+  materialsTitle: ['Materials', 'المواد التعليمية'],
+  noMaterialsYet: ['No materials uploaded yet.', 'لم تُرفع أي مواد بعد.'],
+  thTitle: ['Title', 'العنوان'],
+  thLinkNotes: ['Link / notes', 'الرابط / ملاحظات'],
+  thDate: ['Date', 'التاريخ'],
+  addMaterialTitle: ['Add material', 'إضافة مادة'],
+  titleLabel: ['Title', 'العنوان'],
+  linkOptionalLabel: ['Link (optional)', 'رابط (اختياري)'],
+  descLabel: ['Description / notes', 'الوصف / ملاحظات'],
+  addMaterialBtn: ['Add material', 'إضافة المادة'],
+  confirmRemoveMaterial: ['Remove this material?', 'حذف هذه المادة؟'],
+
+  quizzesTitle: ['Quizzes', 'الاختبارات'],
+  noQuizzesYet: ['No quizzes yet.', 'لا توجد اختبارات بعد.'],
+  thQuestions: ['Questions', 'الأسئلة'],
+  recordResultsBtn: ['Record results', 'تسجيل النتائج'],
+  createQuizTitle: ['Create a quiz', 'إنشاء اختبار'],
+  addQuestionBtn: ['+ Add question', '+ إضافة سؤال'],
+  saveQuizBtn: ['Save quiz', 'حفظ الاختبار'],
+  questionLabel: ['Question', 'السؤال'],
+  optionLabel: ['Option', 'الخيار'],
+  removeQuestionBtn: ['Remove question', 'حذف السؤال'],
+  quizFillAllMsg: ['Add a title and fill in every question.', 'أدخل عنوانًا واملأ جميع الأسئلة.'],
+  confirmRemoveQuiz: ['Remove this quiz? Recorded results will remain but the quiz will disappear from lists.', 'حذف هذا الاختبار؟ ستبقى النتائج المسجّلة، لكن الاختبار سيختفي من القوائم.'],
+  recordResultsTitle: ['Record results —', 'تسجيل النتائج —'],
+  outOfQuestions: ['Out of', 'من إجمالي'],
+  questionsWord: ['question(s).', 'سؤال.'],
+  noChildrenInClass: ['No children in this class.', 'لا يوجد أطفال في هذا الفصل.'],
+  scorePlaceholder: ['Score', 'الدرجة'],
+  saveResultsBtn: ['Save results', 'حفظ النتائج'],
+
+  homeworkTitle: ['Homework', 'الواجبات'],
+  noHomeworkYet: ['No homework assigned yet.', 'لم تُسند أي واجبات بعد.'],
+  thDue: ['Due', 'موعد التسليم'],
+  trackStatusBtn: ['Track status', 'متابعة الحالة'],
+  assignHomeworkTitle: ['Assign homework', 'إسناد واجب'],
+  dueDateLabel: ['Due date', 'موعد التسليم'],
+  descriptionLabel: ['Description', 'الوصف'],
+  assignBtn: ['Assign', 'إسناد الواجب'],
+  confirmRemoveHomework: ['Remove this homework?', 'حذف هذا الواجب؟'],
+  statusOfWord: ['— status', '— الحالة'],
+  statusPending: ['Pending', 'قيد الانتظار'],
+  statusSubmitted: ['Submitted', 'تم التسليم'],
+  statusDone: ['Done / reviewed', 'تمت المراجعة'],
+
+  welcomeTitle: ['Welcome to', 'أهلًا بكم في'],
+  recentGalleryTitle: ['Recent gallery highlights', 'أحدث صور المعرض'],
+  noPhotosGalleryTab: ['No photos added yet — check the Gallery tab.', 'لم تُضف صور بعد — راجع تبويب معرض الصور.'],
+
+  galleryTitle: ['Gallery', 'معرض الصور'],
+  galleryDesc: ['Photos for your classes and school events. Add a class photo or an event photo below.', 'صور فصولك وفعاليات المدرسة. أضف صورة فصل أو صورة فعالية من الأسفل.'],
+  noPhotosYet: ['No photos yet.', 'لا توجد صور بعد.'],
+  addPhotoTitle: ['Add a photo', 'إضافة صورة'],
+  forLabel: ['For', 'الصورة تخص'],
+  forClassOption: ['A class', 'فصلًا دراسيًا'],
+  forEventOption: ['A school event', 'فعالية مدرسية'],
+  eventNameLabel: ['Event name', 'اسم الفعالية'],
+  eventNamePlaceholder: ['e.g. Spring Festival', 'مثال: حفل الربيع'],
+  photoFileLabel: ['Photo file', 'ملف الصورة'],
+  orPasteUrlLabel: ['or paste an image URL', 'أو الصق رابط الصورة'],
+  captionOptionalLabel: ['Caption (optional)', 'تعليق (اختياري)'],
+  keepSmallMsg: ['Keep uploaded photos reasonably small — very large images may fail to save.', 'اجعل حجم الصور المرفوعة معقولًا — قد يتعذّر حفظ الصور الكبيرة جدًا.'],
+  addPhotoBtn: ['Add photo', 'إضافة الصورة'],
+  createClassFirstGalleryMsg: ['Create a class first to add class photos (you can still add event photos).', 'أنشئ فصلًا أولًا لإضافة صور الفصول (يمكنك مع ذلك إضافة صور الفعاليات).'],
+  errCouldNotReadFile: ['Could not read that file.', 'تعذّرت قراءة هذا الملف.'],
+  errChooseFileOrUrl: ['Choose a photo file or paste an image URL.', 'اختر ملف صورة أو الصق رابط صورة.'],
+  errChooseClass: ['Choose a class.', 'اختر الفصل.'],
+  errEnterEventName: ['Enter an event name.', 'أدخل اسم الفعالية.'],
+  errPhotoTooLarge: ['That photo may be too large to save — try a smaller image.', 'قد تكون هذه الصورة أكبر من أن تُحفظ — جرّب صورة أصغر.'],
+  confirmRemovePhoto: ['Remove this photo?', 'حذف هذه الصورة؟'],
+
+  reportsTitle: ['Daily reports', 'التقارير اليومية'],
+  reportsVisibleMsg: ["Visible only within this section. Pick a child and date to view or create today's report.", 'مرئية داخل هذا القسم فقط. اختر الطفل والتاريخ لعرض تقرير اليوم أو إنشائه.'],
+  dateLabel: ['Date', 'التاريخ'],
+  noPastReports: ['No past reports for this child yet.', 'لا توجد تقارير سابقة لهذا الطفل بعد.'],
+  pastReportsLabel: ['Past reports:', 'تقارير سابقة:'],
+  sentToAdminBadge: ['Sent to admin', 'أُرسل إلى المدير'],
+  draftBadge: ['Draft', 'مسودة'],
+  sharedBadge: ['Shared with parents', 'تمت المشاركة مع ولي الأمر'],
+  notSharedBadge: ['Not shared with parents', 'لم تتم المشاركة مع ولي الأمر'],
+  sentAtLabel: ['sent', 'أُرسل في'],
+  moodTitle: ['1 · Mood today', '1 · مزاج اليوم'],
+  mealsTitle: ['2 · Meals', '2 · الوجبات'],
+  offeredPlaceholder: ['What was offered...', 'ما الذي قُدِّم...'],
+  learningTitle: ['3 · Learning', '3 · التعلّم'],
+  circleTimeLabel: ['Circle time', 'وقت الحلقة'],
+  todayWeReadLabel: ['Today we read', 'قرأنا اليوم'],
+  restTitle: ['4 · Rest', '4 · الراحة'],
+  sleptBtn: ['Slept', 'نام'],
+  restedBtn: ['Rested', 'ارتاح'],
+  notesLabel: ['Notes', 'ملاحظات'],
+  bathroomTitle: ['5 · Bathroom', '5 · دورة المياه'],
+  urineLabel: ['Urine (0-3)', 'تبوّل (0-3)'],
+  stoolLabel: ['Stool (0-3)', 'تبرّز (0-3)'],
+  notesHomeTitle: ['6 · Notes home', '6 · ملاحظات للمنزل'],
+  forParentsLabel: ['For parents', 'إلى ولي الأمر'],
+  fromParentsLabel: ['From parents', 'من ولي الأمر'],
+  shareTitle: ['7 · Share with parents', '7 · المشاركة مع ولي الأمر'],
+  noParentAccountsForChild: ['No parent accounts for this child yet — add one in the Parents tab.', 'لا توجد حسابات أولياء أمور لهذا الطفل بعد — أضف حسابًا من تبويب أولياء الأمور.'],
+  sendingNote: ['Sending to admin does not share this report with parents. Pick who should see it below.', 'الإرسال إلى المدير لا يشارك هذا التقرير مع ولي الأمر. اختر من الأسفل من يمكنه الاطّلاع عليه.'],
+  sendCopyBtn: ['Send copy to selected parents', 'إرسال نسخة لأولياء الأمور المحددين'],
+  currentlySharedWith: ['Currently shared with:', 'تمت المشاركة حاليًا مع:'],
+  saveDraftBtn: ['Save draft', 'حفظ كمسودة'],
+  sendToAdminBtn: ['Send to admin', 'إرسال إلى المدير'],
+  printBtn: ['Print / PDF', 'طباعة / PDF'],
+  sharedWithSelected: ['Copy shared with selected parents.', 'تمت مشاركة نسخة مع أولياء الأمور المحددين.'],
+  noParentsSelected: ['No parents selected — pick at least one to share with.', 'لم يتم اختيار أي ولي أمر — اختر واحدًا على الأقل للمشاركة معه.'],
+  sentToAdminMsg: ['Sent to admin.', 'تم الإرسال إلى المدير.'],
+  nothingRecorded: ['Nothing recorded', 'لم يُسجَّل شيء'],
+
+  printedOn: ['Printed', 'طُبع في'],
+  dailyReportTitle: ['Daily Report', 'التقرير اليومي'],
+  dailyReportSub: ['A daily record, one bead at a time', 'سجلّ يومي، خرزة بعد خرزة'],
+  classWord: ['Class:', 'الفصل:'],
+  teacherWordColon: ['Teacher:', 'المعلّمة:'],
+  childWordColon: ['Child:', 'الطفل:'],
+  dateWordColon: ['Date:', 'التاريخ:'],
+  mealTh: ['Meal', 'الوجبة'],
+  offeredTh: ['What was offered', 'ما الذي قُدِّم'],
+  amountTh: ['Amount', 'الكمية'],
+  ofThree: ['of 3', 'من 3'],
+
+  childNotFound: ['Child account not found.', 'لم يُعثر على حساب الطفل.'],
+  noReportsSharedYet: ['No reports shared yet — your teacher will send a copy here.', 'لم تتم مشاركة أي تقارير بعد — ستُرسل المعلّمة نسخة إلى هنا.'],
+  chooseDateLabel: ['Choose a date', 'اختر التاريخ'],
+  viewBtn: ['View', 'عرض التقرير'],
+  markSubmittedBtn: ['Mark submitted', 'تحديد كمُسلَّم'],
+  quizResultsTitle: ['Quiz results', 'نتائج الاختبارات'],
+  noQuizResultsYet: ['No quiz results yet.', 'لا توجد نتائج اختبارات بعد.'],
+  thQuiz: ['Quiz', 'الاختبار'],
+  thScore: ['Score', 'الدرجة'],
+  thStatus: ['Status', 'الحالة'],
+  thNotes: ['Notes', 'ملاحظات'],
+  moodLabel: ['Mood:', 'المزاج:'],
+  notesForParentsColon: ['Notes for parents:', 'ملاحظات لولي الأمر:'],
+
+  aboutDefault: [
+    "Montessori Child Home is a warm, prepared environment where children learn at their own pace through hands-on, purposeful activity. Our teachers guide each child through practical life, sensorial, language, math, and cultural work, while we keep families closely connected to their child's day-to-day growth — from meals and rest to the moments of discovery in between.",
+    'حضانة مونتيسوري بيت الطفل بيئة دافئة ومُعدَّة بعناية، يتعلّم فيها كل طفل بالإيقاع الذي يناسبه، من خلال نشاط عملي هادف. تصحب المعلّمات كل طفل في أعمال الحياة العملية والتربية الحسّية واللغة والرياضيات والمواد الثقافية، مع إبقاء الأسرة قريبة من تفاصيل يوم طفلها — من الوجبات والراحة إلى لحظات الاكتشاف بينهما.'
+  ]
+};
+function t(key){ const row = STRINGS[key]; if(!row) return key; return row[LANG==='ar'?1:0]; }
+
+const MOOD_KEYS = ["Happy","Okay","Sad","Sensitive","Sleepy","Hyperactive","Quiet"];
+const MOOD_STRINGS = {
+  Happy:['Happy','سعيد'], Okay:['Okay','عادي'], Sad:['Sad','حزين'], Sensitive:['Sensitive','حسّاس'],
+  Sleepy:['Sleepy','نعسان'], Hyperactive:['Hyperactive','كثير الحركة'], Quiet:['Quiet','هادئ']
+};
+const MEAL_KEYS = ["Breakfast","Lunch","Snack"];
+const MEAL_STRINGS = { Breakfast:['Breakfast','الإفطار'], Lunch:['Lunch','الغداء'], Snack:['Snack','وجبة خفيفة'] };
+const QTY_KEYS = ["None","Some","All","More"];
+const QTY_STRINGS = { None:['None','لم يأكل'], Some:['Some','قليلًا'], All:['All','الكل'], More:['More','طلب المزيد'] };
+const LEARNING_KEYS = ['practicalLife','sensorial','language','geography','math','art','history','science'];
+const LEARNING_STRINGS = {
+  practicalLife:['Practical life','الحياة العملية'], sensorial:['Sensorial','التربية الحسّية'], language:['Language','اللغة'],
+  geography:['Geography','الجغرافيا'], math:['Math','الرياضيات'], art:['Art','الفن'], history:['History','التاريخ'], science:['Science','العلوم']
+};
+const HW_STATUS_STRINGS = { pending:['Pending','قيد الانتظار'], submitted:['Submitted','تم التسليم'], done:['Done / reviewed','تمت المراجعة'] };
+function lbl(map, key){ const row = map[key]; if(!row) return key; return row[LANG==='ar'?1:0]; }
+const TABS_ORDER = ['Home','Teachers','Parents','Classes','Children','Materials','Quizzes','Homework','Daily Reports','Gallery'];
+const TAB_KEY_STRING = { Home:'tabHome', Teachers:'tabTeachers', Parents:'tabParents', Classes:'tabClasses', Children:'tabChildren', Materials:'tabMaterials', Quizzes:'tabQuizzes', Homework:'tabHomework', 'Daily Reports':'tabReports', Gallery:'tabGallery' };
+
+const LANG_KEY = 'mch_lang';
+function getStoredLang(){ try{ return window.localStorage.getItem(LANG_KEY); }catch(e){ return null; } }
+let LANG = getStoredLang() || 'ar';
+function setLang(l){
+  if(l!==LANG){
+    LANG = l;
+    try{ window.localStorage.setItem(LANG_KEY, l); }catch(e){}
+  }
+  applyLangAttrs();
+  renderBrand();
+  boot();
+}
+function applyLangAttrs(){
+  document.documentElement.lang = LANG;
+  document.documentElement.dir = LANG==='ar' ? 'rtl' : 'ltr';
+}
+function langSwitchHTML(){
+  return `<div class="lang-switch">
+    <button type="button" class="${LANG==='en'?'active':''}" onclick="setLang('en')">${t('langEn')}</button>
+    <button type="button" class="${LANG==='ar'?'active':''}" onclick="setLang('ar')">${t('langAr')}</button>
+  </div>`;
+}
+function renderBrand(){
+  document.getElementById('brandRow').innerHTML = `
+    <div class="brand">
+      <div class="brand-mark">${t('brandMark')}</div>
+      <div>
+        <div class="brand-name">${t('appTitle')}</div>
+        <div class="brand-sub">${t('appTagline')}</div>
+      </div>
+    </div>
+    <div>${langSwitchHTML()}</div>
+  `;
+}
+
+/* ===================== CONFIG ===================== */
+const ADMIN_PASSWORD = 'Sohaila1234'; // change this to your own password
+
+/* ===================== DATA HELPERS ===================== */
+async function getTeachers(){ return await getJSON('teachers', []); }
+async function saveTeachers(list){ return await setJSON('teachers', list); }
+async function getClasses(){ return await getJSON('classes', []); }
+async function saveClasses(list){ return await setJSON('classes', list); }
+async function getChildren(){ return await getJSON('children', []); }
+async function saveChildren(list){ return await setJSON('children', list); }
+async function getMaterials(){ return await getJSON('materials', []); }
+async function saveMaterials(list){ return await setJSON('materials', list); }
+async function getQuizzes(){ return await getJSON('quizzes', []); }
+async function saveQuizzes(list){ return await setJSON('quizzes', list); }
+async function getQuizResults(){ return await getJSON('quizResults', []); }
+async function saveQuizResults(list){ return await setJSON('quizResults', list); }
+async function getHomework(){ return await getJSON('homework', []); }
+async function saveHomework(list){ return await setJSON('homework', list); }
+async function getHwStatus(){ return await getJSON('homeworkStatus', []); }
+async function saveHwStatus(list){ return await setJSON('homeworkStatus', list); }
+async function getParents(){ return await getJSON('parents', []); }
+async function saveParents(list){ return await setJSON('parents', list); }
+async function getAboutText(){ return await getJSON('aboutText', null); }
+async function saveAboutText(text){ return await setJSON('aboutText', text); }
+async function getGallery(){ return await getJSON('gallery', []); }
+async function saveGallery(list){ return await setJSON('gallery', list); }
+function readFileAsDataURL(file){
+  return new Promise((resolve,reject)=>{
+    const r = new FileReader();
+    r.onload = ()=>resolve(r.result);
+    r.onerror = ()=>reject(new Error('read failed'));
+    r.readAsDataURL(file);
+  });
+}
+
+async function getReport(childId, date){ return await getJSON('report:'+childId+':'+date, null); }
+async function saveReport(childId, date, data){ return await setJSON('report:'+childId+':'+date, data); }
+async function listReportsForChild(childId){
+  try{
+    const res = await window.__store.list('report:'+childId+':', true);
+    const keys = (res && res.keys) ? res.keys : [];
+    return keys.map(k=>k.slice(('report:'+childId+':').length)).sort().reverse();
+  }catch(e){ return []; }
+}
+async function listAllReportKeys(){
+  try{ const res = await window.__store.list('report:', true); return (res && res.keys) ? res.keys : []; }
+  catch(e){ return []; }
+}
+async function getParentsForChild(childId){
+  const parents = await getParents();
+  return parents.filter(p=>p.childId===childId);
+}
+// Reports the teacher marks "sent to admin" stay admin/teacher-only.
+// A report only becomes visible to a parent once a teacher explicitly shares it with them.
+async function listVisibleReportsForParent(childId, parentId){
+  const dates = await listReportsForChild(childId);
+  const visible = [];
+  for(const d of dates){
+    const r = await getReport(childId, d);
+    if(!r || !Array.isArray(r.sharedWith) || r.sharedWith.length===0) continue;
+    if(!parentId || r.sharedWith.includes(parentId)) visible.push(d);
+  }
+  return visible;
+}
+
+/* ===================== SESSION ===================== */
+function getSession(){ try{ return JSON.parse(sessionStorage.getItem('mch_session')||'null'); }catch(e){ return null; } }
+function setSession(s){ sessionStorage.setItem('mch_session', JSON.stringify(s)); }
+function clearSession(){ sessionStorage.removeItem('mch_session'); }
+
+let LOGIN_ROLE = 'admin';
+function renderLoginScreen(){
+  document.getElementById('loginScreen').innerHTML = `
+    <div class="login-wrap">
+      <div class="role-tabs">
+        <button class="tab-btn ${LOGIN_ROLE==='admin'?'active':''}" onclick="switchLoginTab('admin')">${t('roleAdmin')}</button>
+        <button class="tab-btn ${LOGIN_ROLE==='teacher'?'active':''}" onclick="switchLoginTab('teacher')">${t('roleTeacher')}</button>
+        <button class="tab-btn ${LOGIN_ROLE==='parent'?'active':''}" onclick="switchLoginTab('parent')">${t('roleParent')}</button>
+      </div>
+
+      <div class="card" id="loginAdmin" style="display:${LOGIN_ROLE==='admin'?'block':'none'};">
+        <h3>${t('adminLoginTitle')}</h3>
+        <p class="muted">${t('adminLoginDesc')}</p>
+        <div class="field"><label class="field-label">${t('passwordLabel')}</label><input type="password" id="adminPwInput"></div>
+        <button class="btn" onclick="loginAsAdmin()">${t('loginBtn')}</button>
+        <div id="adminLoginMsg" class="muted" style="margin-top:8px;"></div>
+      </div>
+
+      <div class="card" id="loginTeacher" style="display:${LOGIN_ROLE==='teacher'?'block':'none'};">
+        <h3>${t('teacherLoginTitle')}</h3>
+        <p class="muted">${t('teacherLoginDesc')}</p>
+        <div class="field"><label class="field-label">${t('yourNameLabel')}</label><select id="teacherLoginSelect"></select></div>
+        <div class="field"><label class="field-label">${t('passwordLabel')}</label><input type="password" id="teacherPwInput"></div>
+        <button class="btn" onclick="loginAsTeacher()">${t('loginBtn')}</button>
+        <div id="teacherLoginMsg" class="muted" style="margin-top:8px;"></div>
+      </div>
+
+      <div class="card" id="loginParent" style="display:${LOGIN_ROLE==='parent'?'block':'none'};">
+        <h3>${t('parentLoginTitle')}</h3>
+        <p class="muted">${t('parentLoginDesc')}</p>
+        <div class="field"><label class="field-label">${t('usernameLabel')}</label><input type="text" id="parentUserInput"></div>
+        <div class="field"><label class="field-label">${t('passwordLabel')}</label><input type="password" id="parentPwInput"></div>
+        <button class="btn" onclick="loginAsParentAccount()">${t('loginBtn')}</button>
+        <div id="parentLoginMsg" class="muted" style="margin-top:8px;"></div>
+        <hr class="sep">
+        <p class="muted">${t('parentOrCode')}</p>
+        <div class="field"><label class="field-label">${t('familyCodeLabel')}</label><input type="text" id="parentCodeInput" style="text-transform:uppercase; direction:ltr;"></div>
+        <button class="btn ghost" onclick="loginAsParent()">${t('viewChildBtn')}</button>
+        <div id="parentCodeLoginMsg" class="muted" style="margin-top:8px;"></div>
+      </div>
+
+      <div class="card" id="parentAboutCard" style="display:${LOGIN_ROLE==='parent'?'block':'none'};">
+        <h3>${t('aboutUsTitle')}</h3>
+        <p class="muted" id="parentAboutText"></p>
+      </div>
+    </div>
+  `;
+  if(LOGIN_ROLE==='teacher') populateTeacherLoginSelect();
+  if(LOGIN_ROLE==='parent') loadParentAboutText();
+}
+function switchLoginTab(role){
+  LOGIN_ROLE = role;
+  renderLoginScreen();
+}
+async function loadParentAboutText(){
+  const about = await getAboutText();
+  document.getElementById('parentAboutText').textContent = about || t('aboutDefault');
+}
+async function populateTeacherLoginSelect(){
+  const teachers = await getTeachers();
+  const sel = document.getElementById('teacherLoginSelect');
+  sel.innerHTML = teachers.length ? teachers.map(t2=>`<option value="${t2.id}">${esc(t2.name)}</option>`).join('') : `<option value="">${t('noTeacherAccountsOpt')}</option>`;
+}
+
+async function loginAsAdmin(){
+  const pw = document.getElementById('adminPwInput').value;
+  if(pw !== ADMIN_PASSWORD){ document.getElementById('adminLoginMsg').textContent = t('errIncorrectPassword'); return; }
+  setSession({role:'admin'});
+  boot();
+}
+async function loginAsTeacher(){
+  const id = document.getElementById('teacherLoginSelect').value;
+  const pw = document.getElementById('teacherPwInput').value;
+  if(!id){ document.getElementById('teacherLoginMsg').textContent = t('errNoAccountSelected'); return; }
+  const teachers = await getTeachers();
+  const tch = teachers.find(x=>x.id===id);
+  if(!tch || tch.password !== pw){ document.getElementById('teacherLoginMsg').textContent = t('errIncorrectPassword'); return; }
+  setSession({role:'teacher', teacherId:tch.id, teacherName:tch.name});
+  boot();
+}
+async function loginAsParent(){
+  const code = document.getElementById('parentCodeInput').value.trim().toUpperCase();
+  const children = await getChildren();
+  const child = children.find(c=>c.parentCode===code);
+  if(!child){ document.getElementById('parentCodeLoginMsg').textContent = t('errCodeNotRecognized'); return; }
+  setSession({role:'parent', childId:child.id});
+  boot();
+}
+async function loginAsParentAccount(){
+  const username = document.getElementById('parentUserInput').value.trim();
+  const pw = document.getElementById('parentPwInput').value;
+  const parents = await getParents();
+  const p = parents.find(x=>x.username.toLowerCase()===username.toLowerCase());
+  if(!p || p.password !== pw){ document.getElementById('parentLoginMsg').textContent = t('errIncorrectUserPass'); return; }
+  setSession({role:'parent', childId:p.childId, parentId:p.id});
+  boot();
+}
+function logout(){ clearSession(); boot(); }
+
+/* ===================== ROUTER / SHELL ===================== */
+let CURRENT_TAB = null;
+
+async function boot(){
+  applyLangAttrs();
+  renderBrand();
+  document.getElementById('logoutBtn').textContent = t('logoutBtn');
+  document.getElementById('langSwitchApp').innerHTML = langSwitchHTML();
+  const s = getSession();
+  if(!s){
+    document.getElementById('loginScreen').style.display = 'block';
+    document.getElementById('appScreen').style.display = 'none';
+    renderLoginScreen();
+    return;
+  }
+  document.getElementById('loginScreen').style.display = 'none';
+  document.getElementById('appScreen').style.display = 'block';
+
+  if(s.role==='admin'){
+    document.getElementById('whoBar').innerHTML = `${t('signedInAsAdmin')} <b>${t('adminWord')}</b>`;
+    renderTabs(TABS_ORDER);
+  } else if(s.role==='teacher'){
+    document.getElementById('whoBar').innerHTML = `${t('signedInAsAdmin')} <b>${esc(s.teacherName)}</b> · ${t('teacherWord')}`;
+    renderTabs(TABS_ORDER.filter(x=>x!=='Teachers' && x!=='Parents'));
+  } else if(s.role==='parent'){
+    const children = await getChildren();
+    const child = children.find(c=>c.id===s.childId);
+    document.getElementById('whoBar').innerHTML = child ? `${t('viewingChild')} <b>${esc(child.name)}</b>${t('accountWord')}` : t('parentViewLabel');
+    document.getElementById('tabNav').innerHTML = '';
+    renderParentView();
+    return;
+  }
+  if(!CURRENT_TAB) CURRENT_TAB = 'Home';
+  await renderTab(CURRENT_TAB);
+}
+
+function renderTabs(tabs){
+  const nav = document.getElementById('tabNav');
+  nav.innerHTML = tabs.map(tb=>`<button class="tab-btn ${CURRENT_TAB===tb?'active':''}" data-tab="${tb}" onclick="switchTab('${tb}')">${t(TAB_KEY_STRING[tb])}</button>`).join('');
+  if(!tabs.includes(CURRENT_TAB)) CURRENT_TAB = tabs[0];
+}
+async function switchTab(tb){
+  CURRENT_TAB = tb;
+  document.querySelectorAll('.tab-btn').forEach(b=>b.classList.toggle('active', b.dataset.tab===tb));
+  await renderTab(tb);
+}
+async function renderTab(tb){
+  const main = document.getElementById('mainArea');
+  main.innerHTML = `<p class="muted">${t('loadingText')}</p>`;
+  if(tb==='Home') return renderHomeTab();
+  if(tb==='Teachers') return renderTeachersTab();
+  if(tb==='Parents') return renderParentsTab();
+  if(tb==='Classes') return renderClassesTab();
+  if(tb==='Children') return renderChildrenTab();
+  if(tb==='Materials') return renderMaterialsTab();
+  if(tb==='Quizzes') return renderQuizzesTab();
+  if(tb==='Homework') return renderHomeworkTab();
+  if(tb==='Daily Reports') return renderReportsTab();
+  if(tb==='Gallery') return renderGalleryTab();
+}
+
+function scopeInfo(){
+  const s = getSession();
+  return { isAdmin: s.role==='admin', teacherId: s.role==='teacher' ? s.teacherId : null };
+}
+function closeModal(){ document.getElementById('modalRoot').innerHTML = ''; }
+function openModal(html){ document.getElementById('modalRoot').innerHTML = `<div class="modal-overlay" onclick="if(event.target===this) closeModal()"><div class="modal">${html}</div></div>`; }
+
+/* ===================== TEACHERS TAB (admin only) ===================== */
+async function renderTeachersTab(){
+  const teachers = await getTeachers();
+  const main = document.getElementById('mainArea');
+  main.innerHTML = `
+    <div class="card">
+      <h3>${t('teachersTitle')}</h3>
+      <p class="muted">${t('teachersDesc')}</p>
+      ${teachers.length===0 ? `<p class="empty-note">${t('noTeachersYet')}</p>` : `
+      <table class="data-table"><thead><tr><th>${t('thName')}</th><th>${t('thPassword')}</th><th></th></tr></thead><tbody>
+      ${teachers.map(tc=>`<tr><td>${esc(tc.name)}</td><td><span class="code-pill">${esc(tc.password)}</span></td>
+      <td><button class="btn ghost small" onclick="resetTeacherPassword('${tc.id}')">${t('resetPasswordBtn')}</button>
+      <button class="btn danger small" onclick="removeTeacher('${tc.id}')">${t('removeBtn')}</button></td></tr>`).join('')}
+      </tbody></table>`}
+    </div>
+    <div class="card">
+      <h3>${t('addTeacherTitle')}</h3>
+      <div class="row">
+        <div class="field"><label class="field-label">${t('nameLabel')}</label><input type="text" id="newTeacherName"></div>
+        <div class="field"><label class="field-label">${t('passwordLabel')}</label><input type="text" id="newTeacherPw" placeholder="${t('pwPlaceholderDefault')}"></div>
+      </div>
+      <button class="btn" onclick="addTeacher()">${t('addTeacherBtn')}</button>
+      <div id="teacherAddMsg" class="muted" style="margin-top:8px;"></div>
+    </div>
+    <div class="card" style="border:1px dashed var(--red);">
+      <h3 style="color:var(--red);">${t('dangerZoneTitle')}</h3>
+      <p class="muted">${t('dangerZoneDesc')}</p>
+      <button class="btn danger" onclick="resetAllData()">${t('deleteAllBtn')}</button>
+      <div id="resetAllMsg" class="muted" style="margin-top:8px;"></div>
+    </div>
+  `;
+}
+async function resetAllData(){
+  const ok1 = confirm(t('confirmDeleteAll'));
+  if(!ok1) return;
+  const typed = prompt(t('deleteConfirmPrompt'));
+  if((typed||'').trim().toUpperCase() !== 'DELETE'){ document.getElementById('resetAllMsg').textContent = t('deleteCancelled'); return; }
+  document.getElementById('resetAllMsg').textContent = t('deletingText');
+  try{
+    const res = await window.__store.list('', true);
+    const keys = (res && res.keys) ? res.keys : [];
+    for(const k of keys){
+      try{ await window.__store.delete(k, true); }catch(e){}
+    }
+    alert(t('deletedAlert'));
+    logout();
+  }catch(e){
+    document.getElementById('resetAllMsg').textContent = t('deleteError');
+  }
+}
+async function addTeacher(){
+  const name = document.getElementById('newTeacherName').value.trim();
+  const pw = document.getElementById('newTeacherPw').value.trim() || '1234';
+  if(!name){ document.getElementById('teacherAddMsg').textContent = t('enterNameMsg'); return; }
+  const teachers = await getTeachers();
+  teachers.push({id:uid(), name, password:pw});
+  await saveTeachers(teachers);
+  renderTeachersTab();
+}
+async function resetTeacherPassword(id){
+  const teachers = await getTeachers();
+  const tc = teachers.find(x=>x.id===id);
+  if(!tc) return;
+  const newPw = prompt(`${t('newPwPromptFor')} ${tc.name}:`, '1234');
+  if(newPw === null || newPw.trim()===''){ return; }
+  tc.password = newPw.trim();
+  await saveTeachers(teachers);
+  renderTeachersTab();
+}
+async function removeTeacher(id){
+  if(!confirm(t('confirmRemoveTeacher'))) return;
+  let teachers = await getTeachers();
+  teachers = teachers.filter(tc=>tc.id!==id);
+  await saveTeachers(teachers);
+  renderTeachersTab();
+}
+
+/* ===================== PARENTS TAB (admin only) ===================== */
+async function renderParentsTab(){
+  const parents = await getParents();
+  const children = await getChildren();
+  const classes = await getClasses();
+  const childLabel = id => { const c = children.find(x=>x.id===id); if(!c) return '—'; const cls = classes.find(x=>x.id===c.classId); return c.name + (cls?' — '+cls.name:''); };
+  const main = document.getElementById('mainArea');
+  main.innerHTML = `
+    <div class="card">
+      <h3>${t('parentsTitle')}</h3>
+      <p class="muted">${t('parentsDesc')}</p>
+      ${parents.length===0 ? `<p class="empty-note">${t('noParentAccounts')}</p>` : `
+      <table class="data-table"><thead><tr><th>${t('thUsername')}</th><th>${t('thPassword')}</th><th>${t('thChild')}</th><th></th></tr></thead><tbody>
+      ${parents.map(p=>`<tr><td>${esc(p.username)}</td><td><span class="code-pill">${esc(p.password)}</span></td><td>${esc(childLabel(p.childId))}</td>
+      <td><button class="btn ghost small" onclick="resetParentPassword('${p.id}')">${t('resetPasswordBtn')}</button>
+      <button class="btn danger small" onclick="removeParent('${p.id}')">${t('removeBtn')}</button></td></tr>`).join('')}
+      </tbody></table>`}
+    </div>
+    <div class="card">
+      <h3>${t('addParentTitle')}</h3>
+      ${children.length===0 ? `<p class="empty-note">${t('createChildFirst')}</p>` : `
+      <div class="row">
+        <div class="field"><label class="field-label">${t('usernameLabel')}</label><input type="text" id="newParentUser"></div>
+        <div class="field"><label class="field-label">${t('passwordLabel')}</label><input type="text" id="newParentPw" placeholder="${t('pwPlaceholderDefault')}"></div>
+        <div class="field"><label class="field-label">${t('childLabel')}</label><select id="newParentChild">${children.map(c=>`<option value="${c.id}">${esc(childLabel(c.id))}</option>`).join('')}</select></div>
+      </div>
+      <button class="btn" onclick="addParent()">${t('addParentBtn')}</button>
+      <div id="parentAddMsg" class="muted" style="margin-top:8px;"></div>`}
+    </div>
+  `;
+}
+async function addParent(){
+  const username = document.getElementById('newParentUser').value.trim();
+  const pw = document.getElementById('newParentPw').value.trim() || '1234';
+  const childId = document.getElementById('newParentChild').value;
+  const msg = document.getElementById('parentAddMsg');
+  if(!username || !childId){ msg.textContent = t('enterUsernameChild'); return; }
+  const parents = await getParents();
+  if(parents.some(p=>p.username.toLowerCase()===username.toLowerCase())){ msg.textContent = t('usernameTaken'); return; }
+  parents.push({id:uid(), username, password:pw, childId});
+  await saveParents(parents);
+  renderParentsTab();
+}
+async function resetParentPassword(id){
+  const parents = await getParents();
+  const p = parents.find(x=>x.id===id);
+  if(!p) return;
+  const newPw = prompt(`${t('newPwPromptFor')} ${p.username}:`, '1234');
+  if(newPw === null || newPw.trim()===''){ return; }
+  p.password = newPw.trim();
+  await saveParents(parents);
+  renderParentsTab();
+}
+async function removeParent(id){
+  if(!confirm(t('confirmRemoveParent'))) return;
+  let parents = await getParents();
+  parents = parents.filter(p=>p.id!==id);
+  await saveParents(parents);
+  renderParentsTab();
+}
+
+/* ===================== CLASSES TAB ===================== */
+async function renderClassesTab(){
+  const {isAdmin, teacherId} = scopeInfo();
+  const classes = await getClasses();
+  const teachers = await getTeachers();
+  const visible = isAdmin ? classes : classes.filter(c=>c.teacherId===teacherId);
+  const teacherName = id => (teachers.find(tc=>tc.id===id)||{}).name || '—';
+  const main = document.getElementById('mainArea');
+  main.innerHTML = `
+    <div class="card">
+      <h3>${t('classesTitle')}</h3>
+      ${visible.length===0 ? `<p class="empty-note">${t('noClassesYet')}</p>` : `
+      <table class="data-table"><thead><tr><th>${t('thClass')}</th>${isAdmin?`<th>${t('thTeacher')}</th>`:''}<th></th></tr></thead><tbody>
+      ${visible.map(c=>`<tr><td>${esc(c.name)}</td>${isAdmin?`<td>${esc(teacherName(c.teacherId))}</td>`:''}
+      <td><button class="btn danger small" onclick="removeClass('${c.id}')">${t('removeBtn')}</button></td></tr>`).join('')}
+      </tbody></table>`}
+    </div>
+    <div class="card">
+      <h3>${t('addClassTitle')}</h3>
+      <div class="row">
+        <div class="field"><label class="field-label">${t('classNameLabel')}</label><input type="text" id="newClassName"></div>
+        ${isAdmin ? `<div class="field"><label class="field-label">${t('teacherLabel')}</label><select id="newClassTeacher">${teachers.map(tc=>`<option value="${tc.id}">${esc(tc.name)}</option>`).join('')}</select></div>` : ''}
+      </div>
+      <button class="btn" onclick="addClass()" ${isAdmin && teachers.length===0 ? 'disabled':''}>${t('addClassBtn')}</button>
+      ${isAdmin && teachers.length===0 ? `<p class="muted" style="margin-top:8px;">${t('addTeacherFirstMsg')}</p>` : ''}
+    </div>
+  `;
+}
+async function addClass(){
+  const {isAdmin, teacherId} = scopeInfo();
+  const name = document.getElementById('newClassName').value.trim();
+  if(!name) return;
+  const tId = isAdmin ? document.getElementById('newClassTeacher').value : teacherId;
+  const classes = await getClasses();
+  classes.push({id:uid(), name, teacherId:tId});
+  await saveClasses(classes);
+  renderClassesTab();
+}
+async function removeClass(id){
+  if(!confirm(t('confirmRemoveClass'))) return;
+  let classes = await getClasses();
+  classes = classes.filter(c=>c.id!==id);
+  await saveClasses(classes);
+  renderClassesTab();
+}
+
+/* ===================== CHILDREN TAB ===================== */
+async function visibleClassIds(){
+  const {isAdmin, teacherId} = scopeInfo();
+  const classes = await getClasses();
+  return isAdmin ? classes.map(c=>c.id) : classes.filter(c=>c.teacherId===teacherId).map(c=>c.id);
+}
+async function renderChildrenTab(){
+  const classIds = await visibleClassIds();
+  const classes = await getClasses();
+  const children = (await getChildren()).filter(c=>classIds.includes(c.classId));
+  const className = id => (classes.find(c=>c.id===id)||{}).name || '—';
+  const main = document.getElementById('mainArea');
+  main.innerHTML = `
+    <div class="card">
+      <h3>${t('childrenTitle')}</h3>
+      ${children.length===0 ? `<p class="empty-note">${t('noChildrenYet')}</p>` : `
+      <table class="data-table"><thead><tr><th>${t('thName')}</th><th>${t('thClass')}</th><th>${t('thFamilyCode')}</th><th></th></tr></thead><tbody>
+      ${children.map(c=>`<tr><td>${esc(c.name)}</td><td>${esc(className(c.classId))}</td><td><span class="code-pill">${esc(c.parentCode)}</span></td>
+      <td><button class="btn danger small" onclick="removeChild('${c.id}')">${t('removeBtn')}</button></td></tr>`).join('')}
+      </tbody></table>
+      <p class="muted" style="margin-top:10px;">${t('familyCodeHint')}</p>`}
+    </div>
+    <div class="card">
+      <h3>${t('addChildTitle')}</h3>
+      ${classIds.length===0 ? `<p class="empty-note">${t('createClassFirst')}</p>` : `
+      <div class="row">
+        <div class="field"><label class="field-label">${t('childNameLabel')}</label><input type="text" id="newChildName"></div>
+        <div class="field"><label class="field-label">${t('classLabel')}</label><select id="newChildClass">${classes.filter(c=>classIds.includes(c.id)).map(c=>`<option value="${c.id}">${esc(c.name)}</option>`).join('')}</select></div>
+      </div>
+      <button class="btn" onclick="addChild()">${t('createChildBtn')}</button>`}
+    </div>
+  `;
+}
+async function addChild(){
+  const name = document.getElementById('newChildName').value.trim();
+  const classId = document.getElementById('newChildClass').value;
+  if(!name || !classId) return;
+  const children = await getChildren();
+  children.push({id:uid(), name, classId, parentCode:randomCode()});
+  await saveChildren(children);
+  renderChildrenTab();
+}
+async function removeChild(id){
+  if(!confirm(t('confirmRemoveChild'))) return;
+  let children = await getChildren();
+  children = children.filter(c=>c.id!==id);
+  await saveChildren(children);
+  renderChildrenTab();
+}
+
+/* ===================== MATERIALS TAB ===================== */
+async function renderMaterialsTab(){
+  const classIds = await visibleClassIds();
+  const classes = await getClasses();
+  const materials = (await getMaterials()).filter(m=>classIds.includes(m.classId));
+  const className = id => (classes.find(c=>c.id===id)||{}).name || '—';
+  const main = document.getElementById('mainArea');
+  main.innerHTML = `
+    <div class="card">
+      <h3>${t('materialsTitle')}</h3>
+      ${materials.length===0 ? `<p class="empty-note">${t('noMaterialsYet')}</p>` : `
+      <table class="data-table"><thead><tr><th>${t('thTitle')}</th><th>${t('thClass')}</th><th>${t('thLinkNotes')}</th><th>${t('thDate')}</th><th></th></tr></thead><tbody>
+      ${materials.slice().reverse().map(m=>`<tr><td>${esc(m.title)}</td><td>${esc(className(m.classId))}</td>
+      <td>${m.link?`<a href="${esc(m.link)}" target="_blank" rel="noopener">${esc(m.link)}</a><br>`:''}${esc(m.description)}</td>
+      <td class="ltr">${esc(m.date)}</td><td><button class="btn danger small" onclick="removeMaterial('${m.id}')">${t('removeBtn')}</button></td></tr>`).join('')}
+      </tbody></table>`}
+    </div>
+    <div class="card">
+      <h3>${t('addMaterialTitle')}</h3>
+      ${classIds.length===0 ? `<p class="empty-note">${t('createClassFirst')}</p>` : `
+      <div class="field"><label class="field-label">${t('titleLabel')}</label><input type="text" id="newMatTitle"></div>
+      <div class="row">
+        <div class="field"><label class="field-label">${t('classLabel')}</label><select id="newMatClass">${classes.filter(c=>classIds.includes(c.id)).map(c=>`<option value="${c.id}">${esc(c.name)}</option>`).join('')}</select></div>
+        <div class="field"><label class="field-label">${t('linkOptionalLabel')}</label><input type="text" id="newMatLink" placeholder="https://..."></div>
+      </div>
+      <div class="field"><label class="field-label">${t('descLabel')}</label><textarea id="newMatDesc"></textarea></div>
+      <button class="btn" onclick="addMaterial()">${t('addMaterialBtn')}</button>`}
+    </div>
+  `;
+}
+async function addMaterial(){
+  const title = document.getElementById('newMatTitle').value.trim();
+  const classId = document.getElementById('newMatClass').value;
+  const link = document.getElementById('newMatLink').value.trim();
+  const description = document.getElementById('newMatDesc').value.trim();
+  if(!title || !classId) return;
+  const materials = await getMaterials();
+  materials.push({id:uid(), title, classId, link, description, date:todayISO()});
+  await saveMaterials(materials);
+  renderMaterialsTab();
+}
+async function removeMaterial(id){
+  if(!confirm(t('confirmRemoveMaterial'))) return;
+  let materials = await getMaterials();
+  materials = materials.filter(m=>m.id!==id);
+  await saveMaterials(materials);
+  renderMaterialsTab();
+}
+
+/* ===================== QUIZZES TAB ===================== */
+let QUIZ_BUILDER_QUESTIONS = [];
+async function renderQuizzesTab(){
+  const classIds = await visibleClassIds();
+  const classes = await getClasses();
+  const quizzes = (await getQuizzes()).filter(q=>classIds.includes(q.classId));
+  const className = id => (classes.find(c=>c.id===id)||{}).name || '—';
+  const main = document.getElementById('mainArea');
+  main.innerHTML = `
+    <div class="card">
+      <h3>${t('quizzesTitle')}</h3>
+      ${quizzes.length===0 ? `<p class="empty-note">${t('noQuizzesYet')}</p>` : `
+      <table class="data-table"><thead><tr><th>${t('thTitle')}</th><th>${t('thClass')}</th><th>${t('thQuestions')}</th><th>${t('thDate')}</th><th></th></tr></thead><tbody>
+      ${quizzes.slice().reverse().map(q=>`<tr><td>${esc(q.title)}</td><td>${esc(className(q.classId))}</td><td>${q.questions.length}</td><td class="ltr">${esc(q.date)}</td>
+      <td><button class="btn small" onclick="openRecordResults('${q.id}')">${t('recordResultsBtn')}</button>
+      <button class="btn danger small" onclick="removeQuiz('${q.id}')">${t('removeBtn')}</button></td></tr>`).join('')}
+      </tbody></table>`}
+    </div>
+    <div class="card">
+      <h3>${t('createQuizTitle')}</h3>
+      ${classIds.length===0 ? `<p class="empty-note">${t('createClassFirst')}</p>` : `
+      <div class="row">
+        <div class="field"><label class="field-label">${t('titleLabel')}</label><input type="text" id="newQuizTitle"></div>
+        <div class="field"><label class="field-label">${t('classLabel')}</label><select id="newQuizClass">${classes.filter(c=>classIds.includes(c.id)).map(c=>`<option value="${c.id}">${esc(c.name)}</option>`).join('')}</select></div>
+      </div>
+      <div id="quizQuestionsWrap"></div>
+      <button class="btn ghost small" onclick="addQuizQuestion()">${t('addQuestionBtn')}</button>
+      <hr class="sep">
+      <button class="btn" onclick="saveQuiz()">${t('saveQuizBtn')}</button>
+      <div id="quizSaveMsg" class="muted" style="margin-top:8px;"></div>`}
+    </div>
+  `;
+  if(classIds.length>0){ QUIZ_BUILDER_QUESTIONS = []; addQuizQuestion(); }
+}
+function addQuizQuestion(){
+  QUIZ_BUILDER_QUESTIONS.push({text:'', options:['','','',''], correctIndex:0});
+  renderQuizQuestions();
+}
+function removeQuizQuestion(i){
+  QUIZ_BUILDER_QUESTIONS.splice(i,1);
+  renderQuizQuestions();
+}
+function renderQuizQuestions(){
+  const wrap = document.getElementById('quizQuestionsWrap');
+  wrap.innerHTML = QUIZ_BUILDER_QUESTIONS.map((q,i)=>`
+    <div class="qbuilder-q">
+      <div class="field"><label class="field-label">${t('questionLabel')} ${i+1}</label>
+        <input type="text" value="${esc(q.text)}" oninput="QUIZ_BUILDER_QUESTIONS[${i}].text=this.value"></div>
+      <div class="row">
+        ${q.options.map((o,oi)=>`
+        <div class="field" style="min-width:120px;">
+          <label class="field-label"><input type="radio" name="correct${i}" ${q.correctIndex===oi?'checked':''} onchange="QUIZ_BUILDER_QUESTIONS[${i}].correctIndex=${oi}"> ${t('optionLabel')} ${oi+1}</label>
+          <input type="text" value="${esc(o)}" oninput="QUIZ_BUILDER_QUESTIONS[${i}].options[${oi}]=this.value">
+        </div>`).join('')}
+      </div>
+      ${QUIZ_BUILDER_QUESTIONS.length>1?`<button class="btn ghost small" onclick="removeQuizQuestion(${i})">${t('removeQuestionBtn')}</button>`:''}
+    </div>
+  `).join('');
+}
+async function saveQuiz(){
+  const title = document.getElementById('newQuizTitle').value.trim();
+  const classId = document.getElementById('newQuizClass').value;
+  if(!title || QUIZ_BUILDER_QUESTIONS.some(q=>!q.text.trim())){
+    document.getElementById('quizSaveMsg').textContent = t('quizFillAllMsg');
+    return;
+  }
+  const quizzes = await getQuizzes();
+  quizzes.push({id:uid(), title, classId, questions:JSON.parse(JSON.stringify(QUIZ_BUILDER_QUESTIONS)), date:todayISO()});
+  await saveQuizzes(quizzes);
+  renderQuizzesTab();
+}
+async function removeQuiz(id){
+  if(!confirm(t('confirmRemoveQuiz'))) return;
+  let quizzes = await getQuizzes();
+  quizzes = quizzes.filter(q=>q.id!==id);
+  await saveQuizzes(quizzes);
+  renderQuizzesTab();
+}
+async function openRecordResults(quizId){
+  const quizzes = await getQuizzes();
+  const quiz = quizzes.find(q=>q.id===quizId);
+  const children = (await getChildren()).filter(c=>c.classId===quiz.classId);
+  const results = await getQuizResults();
+  openModal(`
+    <div class="modal-head"><h3>${t('recordResultsTitle')} ${esc(quiz.title)}</h3><button class="modal-close" onclick="closeModal()">&times;</button></div>
+    <p class="muted">${t('outOfQuestions')} ${quiz.questions.length} ${t('questionsWord')}</p>
+    ${children.length===0 ? `<p class="empty-note">${t('noChildrenInClass')}</p>` : children.map(c=>{
+      const existing = results.find(r=>r.childId===c.id && r.quizId===quizId);
+      return `<div class="field row"><div style="flex:2;min-width:120px;padding-top:8px;">${esc(c.name)}</div>
+      <div style="flex:1;min-width:80px;"><input type="number" min="0" max="${quiz.questions.length}" id="score_${c.id}" value="${existing?existing.score:''}" placeholder="${t('scorePlaceholder')}"></div></div>`;
+    }).join('')}
+    ${children.length>0?`<button class="btn" onclick="saveQuizResults('${quizId}')">${t('saveResultsBtn')}</button>`:''}
+  `);
+}
+async function saveQuizResults(quizId){
+  const quizzes = await getQuizzes();
+  const quiz = quizzes.find(q=>q.id===quizId);
+  const children = (await getChildren()).filter(c=>c.classId===quiz.classId);
+  let results = await getQuizResults();
+  children.forEach(c=>{
+    const input = document.getElementById('score_'+c.id);
+    if(!input || input.value==='') return;
+    const score = Number(input.value);
+    const idx = results.findIndex(r=>r.childId===c.id && r.quizId===quizId);
+    const record = {id: idx>-1?results[idx].id:uid(), childId:c.id, quizId, quizTitle:quiz.title, score, total:quiz.questions.length, date:todayISO()};
+    if(idx>-1) results[idx] = record; else results.push(record);
+  });
+  await saveQuizResults(results);
+  closeModal();
+}
+
+/* ===================== HOMEWORK TAB ===================== */
+async function renderHomeworkTab(){
+  const classIds = await visibleClassIds();
+  const classes = await getClasses();
+  const homework = (await getHomework()).filter(h=>classIds.includes(h.classId));
+  const className = id => (classes.find(c=>c.id===id)||{}).name || '—';
+  const main = document.getElementById('mainArea');
+  main.innerHTML = `
+    <div class="card">
+      <h3>${t('homeworkTitle')}</h3>
+      ${homework.length===0 ? `<p class="empty-note">${t('noHomeworkYet')}</p>` : `
+      <table class="data-table"><thead><tr><th>${t('thTitle')}</th><th>${t('thClass')}</th><th>${t('thDue')}</th><th></th></tr></thead><tbody>
+      ${homework.slice().reverse().map(h=>`<tr><td>${esc(h.title)}</td><td>${esc(className(h.classId))}</td><td class="ltr">${esc(h.dueDate)}</td>
+      <td><button class="btn small" onclick="openHomeworkStatus('${h.id}')">${t('trackStatusBtn')}</button>
+      <button class="btn danger small" onclick="removeHomework('${h.id}')">${t('removeBtn')}</button></td></tr>`).join('')}
+      </tbody></table>`}
+    </div>
+    <div class="card">
+      <h3>${t('assignHomeworkTitle')}</h3>
+      ${classIds.length===0 ? `<p class="empty-note">${t('createClassFirst')}</p>` : `
+      <div class="field"><label class="field-label">${t('titleLabel')}</label><input type="text" id="newHwTitle"></div>
+      <div class="row">
+        <div class="field"><label class="field-label">${t('classLabel')}</label><select id="newHwClass">${classes.filter(c=>classIds.includes(c.id)).map(c=>`<option value="${c.id}">${esc(c.name)}</option>`).join('')}</select></div>
+        <div class="field"><label class="field-label">${t('dueDateLabel')}</label><input type="date" id="newHwDue" value="${todayISO()}"></div>
+      </div>
+      <div class="field"><label class="field-label">${t('descriptionLabel')}</label><textarea id="newHwDesc"></textarea></div>
+      <button class="btn" onclick="addHomework()">${t('assignBtn')}</button>`}
+    </div>
+  `;
+}
+async function addHomework(){
+  const title = document.getElementById('newHwTitle').value.trim();
+  const classId = document.getElementById('newHwClass').value;
+  const dueDate = document.getElementById('newHwDue').value;
+  const description = document.getElementById('newHwDesc').value.trim();
+  if(!title || !classId) return;
+  const homework = await getHomework();
+  homework.push({id:uid(), title, classId, dueDate, description, date:todayISO()});
+  await saveHomework(homework);
+  renderHomeworkTab();
+}
+async function removeHomework(id){
+  if(!confirm(t('confirmRemoveHomework'))) return;
+  let homework = await getHomework();
+  homework = homework.filter(h=>h.id!==id);
+  await saveHomework(homework);
+  renderHomeworkTab();
+}
+async function openHomeworkStatus(hwId){
+  const homework = await getHomework();
+  const hw = homework.find(h=>h.id===hwId);
+  const children = (await getChildren()).filter(c=>c.classId===hw.classId);
+  const statuses = await getHwStatus();
+  openModal(`
+    <div class="modal-head"><h3>${esc(hw.title)} ${t('statusOfWord')}</h3><button class="modal-close" onclick="closeModal()">&times;</button></div>
+    ${children.length===0 ? `<p class="empty-note">${t('noChildrenInClass')}</p>` : children.map(c=>{
+      const st = statuses.find(s=>s.childId===c.id && s.homeworkId===hwId);
+      const val = st ? st.status : 'pending';
+      return `<div class="field row"><div style="flex:2;min-width:120px;padding-top:8px;">${esc(c.name)}</div>
+      <div style="flex:1;min-width:130px;"><select id="hwstatus_${c.id}">
+        <option value="pending" ${val==='pending'?'selected':''}>${t('statusPending')}</option>
+        <option value="submitted" ${val==='submitted'?'selected':''}>${t('statusSubmitted')}</option>
+        <option value="done" ${val==='done'?'selected':''}>${t('statusDone')}</option>
+      </select></div></div>`;
+    }).join('')}
+    ${children.length>0?`<button class="btn" onclick="saveHomeworkStatus('${hwId}')">${t('saveBtn')}</button>`:''}
+  `);
+}
+async function saveHomeworkStatus(hwId){
+  const homework = await getHomework();
+  const hw = homework.find(h=>h.id===hwId);
+  const children = (await getChildren()).filter(c=>c.classId===hw.classId);
+  let statuses = await getHwStatus();
+  children.forEach(c=>{
+    const sel = document.getElementById('hwstatus_'+c.id);
+    if(!sel) return;
+    const idx = statuses.findIndex(s=>s.childId===c.id && s.homeworkId===hwId);
+    const record = {id: idx>-1?statuses[idx].id:uid(), childId:c.id, homeworkId:hwId, status:sel.value, date:todayISO()};
+    if(idx>-1) statuses[idx] = record; else statuses.push(record);
+  });
+  await saveHwStatus(statuses);
+  closeModal();
+}
+
+/* ===================== HOME TAB ===================== */
+async function renderHomeTab(){
+  const {isAdmin} = scopeInfo();
+  const about = await getAboutText();
+  const gallery = (await getGallery()).slice().reverse().slice(0,6);
+  const main = document.getElementById('mainArea');
+  main.innerHTML = `
+    <div class="home-hero">
+      <h2>${t('welcomeTitle')} ${t('appTitle')}</h2>
+      <p class="muted">${t('appTagline')}.</p>
+    </div>
+    <div class="card">
+      <h3>${t('aboutUsTitle')}</h3>
+      ${isAdmin ? `
+        <textarea id="aboutTextArea" style="min-height:140px;">${esc(about || t('aboutDefault'))}</textarea>
+        <button class="btn" style="margin-top:10px;" onclick="saveAbout()">${t('saveBtn')}</button>
+        <div id="aboutSaveMsg" class="muted" style="margin-top:8px;"></div>
+      ` : `<p>${esc(about || t('aboutDefault'))}</p>`}
+    </div>
+    <div class="card">
+      <h3>${t('recentGalleryTitle')}</h3>
+      ${gallery.length===0 ? `<p class="empty-note">${t('noPhotosGalleryTab')}</p>` : `
+      <div class="gallery-grid">
+        ${gallery.map(g=>`<div class="gallery-item"><img src="${esc(g.imageData)}" alt=""><div class="gi-body"><div class="gi-tag">${g.kind==='event'?esc(g.eventName):esc(g.classNameCache||'')}</div><div class="gi-caption">${esc(g.caption||'')}</div></div></div>`).join('')}
+      </div>`}
+    </div>
+  `;
+}
+async function saveAbout(){
+  const text = document.getElementById('aboutTextArea').value;
+  const ok = await saveAboutText(text);
+  document.getElementById('aboutSaveMsg').textContent = ok ? t('savedMsg') : t('saveFailedMsg');
+}
+
+/* ===================== GALLERY TAB ===================== */
+async function renderGalleryTab(){
+  const classIds = await visibleClassIds();
+  const classes = await getClasses();
+  const gallery = await getGallery();
+  const className = id => (classes.find(c=>c.id===id)||{}).name || '—';
+  const visible = gallery.filter(g=> g.kind==='event' || classIds.includes(g.classId));
+  const main = document.getElementById('mainArea');
+  main.innerHTML = `
+    <div class="card">
+      <h3>${t('galleryTitle')}</h3>
+      <p class="muted">${t('galleryDesc')}</p>
+      ${visible.length===0 ? `<p class="empty-note">${t('noPhotosYet')}</p>` : `
+      <div class="gallery-grid">
+        ${visible.slice().reverse().map(g=>`
+        <div class="gallery-item">
+          <img src="${esc(g.imageData)}" alt="">
+          <div class="gi-body">
+            <div class="gi-tag">${g.kind==='event' ? esc(g.eventName) : esc(className(g.classId))}</div>
+            <div class="gi-caption">${esc(g.caption||'')}</div>
+            <button class="btn danger small" style="margin-top:6px;" onclick="removeGalleryItem('${g.id}')">${t('removeBtn')}</button>
+          </div>
+        </div>`).join('')}
+      </div>`}
+    </div>
+    <div class="card">
+      <h3>${t('addPhotoTitle')}</h3>
+      <div class="row">
+        <div class="field"><label class="field-label">${t('forLabel')}</label>
+          <select id="newGalleryKind" onchange="onGalleryKindChange()">
+            <option value="class">${t('forClassOption')}</option>
+            <option value="event">${t('forEventOption')}</option>
+          </select>
+        </div>
+        <div class="field" id="galleryClassField"><label class="field-label">${t('classLabel')}</label>
+          <select id="newGalleryClass">${classes.filter(c=>classIds.includes(c.id)).map(c=>`<option value="${c.id}">${esc(c.name)}</option>`).join('')}</select>
+        </div>
+        <div class="field" id="galleryEventField" style="display:none;"><label class="field-label">${t('eventNameLabel')}</label><input type="text" id="newGalleryEvent" placeholder="${t('eventNamePlaceholder')}"></div>
+      </div>
+      <div class="field"><label class="field-label">${t('photoFileLabel')}</label><input type="file" accept="image/*" id="newGalleryFile"></div>
+      <div class="field"><label class="field-label">${t('orPasteUrlLabel')}</label><input type="text" id="newGalleryUrl" placeholder="https://..."></div>
+      <div class="field"><label class="field-label">${t('captionOptionalLabel')}</label><input type="text" id="newGalleryCaption"></div>
+      <p class="muted">${t('keepSmallMsg')}</p>
+      <button class="btn" onclick="addGalleryItem()" ${classIds.length===0?'disabled':''}>${t('addPhotoBtn')}</button>
+      ${classIds.length===0 ? `<p class="muted" style="margin-top:8px;">${t('createClassFirstGalleryMsg')}</p>` : ''}
+      <div id="gallerySaveMsg" class="muted" style="margin-top:8px;"></div>
+    </div>
+  `;
+}
+function onGalleryKindChange(){
+  const kind = document.getElementById('newGalleryKind').value;
+  document.getElementById('galleryClassField').style.display = kind==='class' ? 'block' : 'none';
+  document.getElementById('galleryEventField').style.display = kind==='event' ? 'block' : 'none';
+}
+async function addGalleryItem(){
+  const kind = document.getElementById('newGalleryKind').value;
+  const caption = document.getElementById('newGalleryCaption').value.trim();
+  const file = document.getElementById('newGalleryFile').files[0];
+  const url = document.getElementById('newGalleryUrl').value.trim();
+  const msg = document.getElementById('gallerySaveMsg');
+  let imageData = '';
+  try{
+    if(file){ imageData = await readFileAsDataURL(file); }
+    else if(url){ imageData = url; }
+  }catch(e){ msg.textContent = t('errCouldNotReadFile'); return; }
+  if(!imageData){ msg.textContent = t('errChooseFileOrUrl'); return; }
+  const item = {id:uid(), kind, caption, imageData, date:todayISO()};
+  if(kind==='class'){
+    const classId = document.getElementById('newGalleryClass').value;
+    if(!classId){ msg.textContent = t('errChooseClass'); return; }
+    const classes = await getClasses();
+    item.classId = classId;
+    item.classNameCache = (classes.find(c=>c.id===classId)||{}).name || '';
+  } else {
+    const eventName = document.getElementById('newGalleryEvent').value.trim();
+    if(!eventName){ msg.textContent = t('errEnterEventName'); return; }
+    item.eventName = eventName;
+  }
+  const gallery = await getGallery();
+  gallery.push(item);
+  const ok = await saveGallery(gallery);
+  if(!ok){ msg.textContent = t('errPhotoTooLarge'); return; }
+  renderGalleryTab();
+}
+async function removeGalleryItem(id){
+  if(!confirm(t('confirmRemovePhoto'))) return;
+  let gallery = await getGallery();
+  gallery = gallery.filter(g=>g.id!==id);
+  await saveGallery(gallery);
+  renderGalleryTab();
+}
+
+
+/* ===================== DAILY REPORTS TAB ===================== */
+let REPORT_STATE = null;
+let REPORT_CTX = null; // {childId, childName, className, teacherName, date}
+
+function blankReportState(){
+  return {
+    mood:[], meals:{Breakfast:{desc:'',qty:''},Lunch:{desc:'',qty:''},Snack:{desc:'',qty:''}},
+    learning:{practicalLife:'',sensorial:'',language:'',geography:'',math:'',art:'',history:'',science:'',circleTime:'',weRead:''},
+    rest:{slept:false,rested:false,restNote:''}, bathroom:{urine:0,stool:0},
+    notesForParents:'', notesFromParents:'', status:'draft', sharedWith:[]
+  };
+}
+
+async function renderReportsTab(){
+  const classIds = await visibleClassIds();
+  const classes = await getClasses();
+  const children = (await getChildren()).filter(c=>classIds.includes(c.classId));
+  const className = id => (classes.find(c=>c.id===id)||{}).name || '—';
+  const main = document.getElementById('mainArea');
+  main.innerHTML = `
+    <div class="card">
+      <h3>${t('reportsTitle')}</h3>
+      <p class="muted">${t('reportsVisibleMsg')}</p>
+      ${children.length===0 ? `<p class="empty-note">${t('noChildrenYet')}</p>` : `
+      <div class="row">
+        <div class="field"><label class="field-label">${t('childLabel')}</label><select id="reportChildSelect" onchange="onReportChildChange()">${children.map(c=>`<option value="${c.id}">${esc(c.name)} — ${esc(className(c.classId))}</option>`).join('')}</select></div>
+        <div class="field"><label class="field-label">${t('dateLabel')}</label><input type="date" id="reportDateInput" value="${todayISO()}" onchange="loadReportForm()"></div>
+      </div>
+      <div id="reportHistoryWrap" class="muted" style="margin-bottom:10px;"></div>
+      <div id="reportFormWrap"></div>`}
+    </div>
+  `;
+  if(children.length>0) onReportChildChange();
+}
+async function onReportChildChange(){
+  await loadReportForm();
+  await renderReportHistory();
+}
+async function renderReportHistory(){
+  const childId = document.getElementById('reportChildSelect').value;
+  const dates = await listReportsForChild(childId);
+  const wrap = document.getElementById('reportHistoryWrap');
+  if(dates.length===0){ wrap.innerHTML = t('noPastReports'); return; }
+  wrap.innerHTML = t('pastReportsLabel') + ' ' + dates.map(d=>`<a href="#" class="ltr" onclick="event.preventDefault(); document.getElementById('reportDateInput').value='${d}'; loadReportForm();">${d}</a>`).join(' · ');
+}
+async function loadReportForm(){
+  const childId = document.getElementById('reportChildSelect').value;
+  const date = document.getElementById('reportDateInput').value || todayISO();
+  const children = await getChildren();
+  const classes = await getClasses();
+  const teachers = await getTeachers();
+  const child = children.find(c=>c.id===childId);
+  const cls = classes.find(c=>c.id===child.classId);
+  const teacherName = (teachers.find(tc=>tc.id===cls.teacherId)||{}).name || '—';
+  const existing = await getReport(childId, date);
+  REPORT_STATE = existing || blankReportState();
+  if(!Array.isArray(REPORT_STATE.sharedWith)) REPORT_STATE.sharedWith = [];
+  const childParents = await getParentsForChild(childId);
+  REPORT_CTX = {childId, childName:child.name, className:cls.name, teacherName, teacherId:cls.teacherId, date, childParents};
+  renderReportForm();
+}
+function renderReportForm(){
+  const s = REPORT_STATE;
+  const wrap = document.getElementById('reportFormWrap');
+  const statusBadge = s.status==='sent' ? `<span class="badge green">${t('sentToAdminBadge')}</span>` : `<span class="badge yellow">${t('draftBadge')}</span>`;
+  const shareBadge = (s.sharedWith||[]).length ? `<span class="badge blue">${t('sharedBadge')}</span>` : `<span class="badge violet">${t('notSharedBadge')}</span>`;
+  wrap.innerHTML = `
+    <hr class="sep">
+    <p>${statusBadge} ${shareBadge} ${s.sentAt?(`<span class="muted">${t('sentAtLabel')} <span class="ltr">${esc(s.sentAt)}</span></span>`):''}</p>
+    <h3 style="font-size:15px;">${t('moodTitle')}</h3>
+    <div class="tile-row" style="margin-bottom:14px;">${MOOD_KEYS.map(m=>`<button type="button" class="tile ${s.mood.includes(m)?'on':''}" onclick="toggleMood('${m}')">${lbl(MOOD_STRINGS,m)}</button>`).join('')}</div>
+
+    <h3 style="font-size:15px;">${t('mealsTitle')}</h3>
+    ${MEAL_KEYS.map(meal=>`
+      <div class="field">
+        <label class="field-label">${lbl(MEAL_STRINGS,meal)}</label>
+        <input type="text" placeholder="${t('offeredPlaceholder')}" value="${esc(s.meals[meal].desc)}" oninput="updateMealDesc('${meal}', this.value)">
+        <div class="tile-row" style="margin-top:6px;">${QTY_KEYS.map(q=>`<button type="button" class="tile ${s.meals[meal].qty===q?'on':''}" onclick="updateMealQty('${meal}','${q}')">${lbl(QTY_STRINGS,q)}</button>`).join('')}</div>
+      </div>`).join('')}
+
+    <h3 style="font-size:15px;">${t('learningTitle')}</h3>
+    <div class="row">
+      ${LEARNING_KEYS.map(k=>`
+      <div class="field" style="min-width:220px;"><label class="field-label">${lbl(LEARNING_STRINGS,k)}</label><input type="text" value="${esc(s.learning[k])}" oninput="updateLearning('${k}', this.value)"></div>`).join('')}
+    </div>
+    <div class="field"><label class="field-label">${t('circleTimeLabel')}</label><input type="text" value="${esc(s.learning.circleTime)}" oninput="updateLearning('circleTime', this.value)"></div>
+    <div class="field"><label class="field-label">${t('todayWeReadLabel')}</label><input type="text" value="${esc(s.learning.weRead)}" oninput="updateLearning('weRead', this.value)"></div>
+
+    <h3 style="font-size:15px;">${t('restTitle')}</h3>
+    <div class="tile-row" style="margin-bottom:8px;">
+      <button type="button" class="tile ${s.rest.slept?'on':''}" onclick="toggleRest('slept')">${t('sleptBtn')}</button>
+      <button type="button" class="tile ${s.rest.rested?'on':''}" onclick="toggleRest('rested')">${t('restedBtn')}</button>
+    </div>
+    <div class="field"><label class="field-label">${t('notesLabel')}</label><textarea oninput="updateRestNote(this.value)">${esc(s.rest.restNote)}</textarea></div>
+
+    <h3 style="font-size:15px;">${t('bathroomTitle')}</h3>
+    <div class="row">
+      <div class="field"><label class="field-label">${t('urineLabel')}</label><input type="number" min="0" max="3" value="${s.bathroom.urine}" oninput="updateBathroom('urine', this.value)"></div>
+      <div class="field"><label class="field-label">${t('stoolLabel')}</label><input type="number" min="0" max="3" value="${s.bathroom.stool}" oninput="updateBathroom('stool', this.value)"></div>
+    </div>
+
+    <h3 style="font-size:15px;">${t('notesHomeTitle')}</h3>
+    <div class="field"><label class="field-label">${t('forParentsLabel')}</label><textarea oninput="updateNotes('notesForParents', this.value)">${esc(s.notesForParents)}</textarea></div>
+    <div class="field"><label class="field-label">${t('fromParentsLabel')}</label><textarea oninput="updateNotes('notesFromParents', this.value)">${esc(s.notesFromParents)}</textarea></div>
+
+    <h3 style="font-size:15px;">${t('shareTitle')}</h3>
+    ${(REPORT_CTX.childParents||[]).length===0 ? `<p class="empty-note">${t('noParentAccountsForChild')}</p>` : `
+    <p class="muted" style="margin-top:-4px;">${t('sendingNote')}</p>
+    <div class="tile-row" style="margin-bottom:8px;">${REPORT_CTX.childParents.map(p=>`<button type="button" class="tile ${s.sharedWith.includes(p.id)?'on':''}" onclick="toggleShareParent('${p.id}')">${esc(p.username)}</button>`).join('')}</div>
+    <button class="btn ghost small" onclick="sendReportToParents()">${t('sendCopyBtn')}</button>
+    ${s.sharedWith.length ? `<p class="muted" style="margin-top:6px;">${t('currentlySharedWith')} ${s.sharedWith.map(id=>{ const p=(REPORT_CTX.childParents||[]).find(x=>x.id===id); return p?esc(p.username):null; }).filter(Boolean).join('، ')}</p>` : ''}
+    `}
+
+    <hr class="sep">
+    <button class="btn ghost" onclick="saveReportDraft()">${t('saveDraftBtn')}</button>
+    <button class="btn" onclick="sendReportToAdmin()">${t('sendToAdminBtn')}</button>
+    <button class="btn ghost" onclick="printReport()">${t('printBtn')}</button>
+    <div id="reportSaveMsg" class="muted" style="margin-top:8px;"></div>
+  `;
+}
+function toggleShareParent(parentId){
+  const i = REPORT_STATE.sharedWith.indexOf(parentId);
+  if(i>-1) REPORT_STATE.sharedWith.splice(i,1); else REPORT_STATE.sharedWith.push(parentId);
+  renderReportForm();
+}
+async function sendReportToParents(){
+  await saveReportDraft();
+  document.getElementById('reportSaveMsg').textContent = REPORT_STATE.sharedWith.length
+    ? t('sharedWithSelected')
+    : t('noParentsSelected');
+}
+function toggleMood(m){ const i=REPORT_STATE.mood.indexOf(m); if(i>-1) REPORT_STATE.mood.splice(i,1); else REPORT_STATE.mood.push(m); renderReportForm(); }
+function updateMealDesc(meal,v){ REPORT_STATE.meals[meal].desc = v; }
+function updateMealQty(meal,q){ REPORT_STATE.meals[meal].qty = q; renderReportForm(); }
+function updateLearning(k,v){ REPORT_STATE.learning[k] = v; }
+function toggleRest(k){ REPORT_STATE.rest[k] = !REPORT_STATE.rest[k]; renderReportForm(); }
+function updateRestNote(v){ REPORT_STATE.rest.restNote = v; }
+function updateBathroom(k,v){ REPORT_STATE.bathroom[k] = Math.max(0, Math.min(3, Number(v)||0)); }
+function updateNotes(k,v){ REPORT_STATE[k] = v; }
+
+async function saveReportDraft(){
+  REPORT_STATE.status = REPORT_STATE.status || 'draft';
+  REPORT_STATE.teacherName = REPORT_CTX.teacherName;
+  REPORT_STATE.teacherId = REPORT_CTX.teacherId;
+  REPORT_STATE.className = REPORT_CTX.className;
+  REPORT_STATE.childName = REPORT_CTX.childName;
+  const ok = await saveReport(REPORT_CTX.childId, REPORT_CTX.date, REPORT_STATE);
+  document.getElementById('reportSaveMsg').textContent = ok ? t('savedMsg') : t('saveFailedMsg');
+  renderReportHistory();
+}
+async function sendReportToAdmin(){
+  REPORT_STATE.status = 'sent';
+  REPORT_STATE.sentAt = new Date().toLocaleString(LANG==='ar'?'ar-EG':'en-US');
+  await saveReportDraft();
+  document.getElementById('reportSaveMsg').textContent = t('sentToAdminMsg');
+  renderReportForm();
+}
+function fieldOrEmpty(v){ return v && v.trim() ? esc(v) : `<span class="p-empty">${t('nothingRecorded')}</span>`; }
+function printReport(){
+  const s = REPORT_STATE, ctx = REPORT_CTX;
+  const moodChecklist = MOOD_KEYS.map(m=>`<div class="p-check"><span class="p-box${s.mood.includes(m)?' filled':''}"></span>${esc(lbl(MOOD_STRINGS,m))}</div>`).join('');
+  const mealsRows = MEAL_KEYS.map(meal=>{ const m=s.meals[meal]; return `<tr><td class="p-label">${esc(lbl(MEAL_STRINGS,meal))}</td><td>${fieldOrEmpty(m.desc)}</td><td style="width:90px;font-weight:600;">${m.qty?esc(lbl(QTY_STRINGS,m.qty)):'<span class="p-empty">—</span>'}</td></tr>`; }).join('');
+  const col = keys => keys.map(k=>`<div class="p-field"><b>${esc(lbl(LEARNING_STRINGS,k))}:</b> ${fieldOrEmpty(s.learning[k])}</div>`).join('');
+  const dotsFor = n => { let o=''; for(let i=0;i<3;i++) o+=`<span class="p-box${i<n?' filled':''}" style="border-radius:50%;margin-inline-end:4px;"></span>`; return o; };
+  document.getElementById('printArea').innerHTML = `
+    <div class="p-page">
+      <div class="p-brand"><div class="p-brand-mark">${t('brandMark')}</div><div class="p-brand-name">${t('appTitle')}</div></div>
+      <div class="p-title">${t('dailyReportTitle')}</div>
+      <div class="p-sub">${t('dailyReportSub')}</div>
+      <div class="p-meta"><div><b>${t('childWordColon')}</b> ${esc(ctx.childName)}</div><div><b>${t('classWord')}</b> ${esc(ctx.className)}</div><div><b>${t('teacherWordColon')}</b> ${esc(ctx.teacherName)}</div><div><b>${t('dateWordColon')}</b> <span class="ltr">${esc(ctx.date)}</span></div></div>
+      <div class="p-section"><h3>${t('moodTitle').replace(' today','').replace(' اليوم','')}</h3><div class="p-checklist">${moodChecklist}</div></div>
+      <div class="p-section"><h3>${t('mealsTitle')}</h3><table class="p-table"><tr><td class="p-label">${t('mealTh')}</td><td>${t('offeredTh')}</td><td>${t('amountTh')}</td></tr>${mealsRows}</table></div>
+      <div class="p-section"><h3>${t('learningTitle')}</h3><div class="p-grid2"><div>${col(['practicalLife','sensorial','language','geography'])}</div><div>${col(['math','art','history','science'])}</div></div>
+        <div class="p-field" style="margin-top:6px;"><b>${t('circleTimeLabel')}:</b> ${fieldOrEmpty(s.learning.circleTime)}</div><div class="p-field"><b>${t('todayWeReadLabel')}:</b> ${fieldOrEmpty(s.learning.weRead)}</div></div>
+      <div class="p-section"><h3>${t('restTitle')}</h3><div class="p-checklist"><div class="p-check"><span class="p-box${s.rest.slept?' filled':''}"></span>${t('sleptBtn')}</div><div class="p-check"><span class="p-box${s.rest.rested?' filled':''}"></span>${t('restedBtn')}</div></div>
+        <div class="p-field" style="margin-top:6px;"><b>${t('notesLabel')}:</b> ${fieldOrEmpty(s.rest.restNote)}</div></div>
+      <div class="p-section"><h3>${t('bathroomTitle')}</h3><div class="p-checklist"><div class="p-check">${t('urineLabel').split(' (')[0]}: ${dotsFor(s.bathroom.urine)} (${s.bathroom.urine} ${t('ofThree')})</div><div class="p-check">${t('stoolLabel').split(' (')[0]}: ${dotsFor(s.bathroom.stool)} (${s.bathroom.stool} ${t('ofThree')})</div></div></div>
+      <div class="p-section"><h3>${t('notesHomeTitle')}</h3><div class="p-field"><b>${t('forParentsLabel')}</b></div><div class="p-note-box">${fieldOrEmpty(s.notesForParents)}</div><div class="p-field"><b>${t('fromParentsLabel')}</b></div><div class="p-note-box">${fieldOrEmpty(s.notesFromParents)}</div></div>
+      <div class="p-footer">${t('printedOn')} ${new Date().toLocaleDateString(LANG==='ar'?'ar-EG':'en-US')}</div>
+    </div>`;
+  window.print();
+}
+
+/* ===================== PARENT VIEW ===================== */
+async function renderParentView(){
+  const s = getSession();
+  const children = await getChildren();
+  const child = children.find(c=>c.id===s.childId);
+  const main = document.getElementById('mainArea');
+  if(!child){ main.innerHTML = `<p class="empty-note">${t('childNotFound')}</p>`; return; }
+  const classes = await getClasses();
+  const teachers = await getTeachers();
+  const cls = classes.find(c=>c.id===child.classId) || {};
+  const teacherName = (teachers.find(tc=>tc.id===cls.teacherId)||{}).name || '—';
+  const materials = (await getMaterials()).filter(m=>m.classId===child.classId);
+  const homework = (await getHomework()).filter(h=>h.classId===child.classId);
+  const hwStatuses = await getHwStatus();
+  const quizResults = (await getQuizResults()).filter(r=>r.childId===child.id);
+  const reportDates = await listVisibleReportsForParent(child.id, s.parentId);
+  const about = await getAboutText();
+  const gallery = (await getGallery()).filter(g=> g.kind==='event' || g.classId===child.classId);
+
+  main.innerHTML = `
+    <div class="home-hero">
+      <h2>${t('appTitle')}</h2>
+      <p class="muted">${esc(about || t('aboutDefault'))}</p>
+    </div>
+    <div class="card">
+      <h3>${esc(child.name)}</h3>
+      <p class="muted">${t('classWord')} ${esc(cls.name||'—')} · ${t('teacherWordColon')} ${esc(teacherName)}</p>
+    </div>
+
+    <div class="card">
+      <h3>${t('galleryTitle')}</h3>
+      ${gallery.length===0 ? `<p class="empty-note">${t('noPhotosYet')}</p>` : `
+      <div class="gallery-grid">
+        ${gallery.slice().reverse().map(g=>`<div class="gallery-item"><img src="${esc(g.imageData)}" alt=""><div class="gi-body"><div class="gi-tag">${g.kind==='event'?esc(g.eventName):esc(g.classNameCache||cls.name||'')}</div><div class="gi-caption">${esc(g.caption||'')}</div></div></div>`).join('')}
+      </div>`}
+    </div>
+
+    <div class="card">
+      <h3>${t('materialsTitle')}</h3>
+      ${materials.length===0 ? `<p class="empty-note">${t('noMaterialsYet')}</p>` : `<table class="data-table"><thead><tr><th>${t('thTitle')}</th><th>${t('thNotes')}</th><th>${t('thDate')}</th></tr></thead><tbody>
+      ${materials.slice().reverse().map(m=>`<tr><td>${esc(m.title)}</td><td>${m.link?`<a href="${esc(m.link)}" target="_blank" rel="noopener">${esc(m.link)}</a><br>`:''}${esc(m.description)}</td><td class="ltr">${esc(m.date)}</td></tr>`).join('')}
+      </tbody></table>`}
+    </div>
+
+    <div class="card">
+      <h3>${t('homeworkTitle')}</h3>
+      ${homework.length===0 ? `<p class="empty-note">${t('noHomeworkYet')}</p>` : `<table class="data-table"><thead><tr><th>${t('thTitle')}</th><th>${t('thDue')}</th><th>${t('thStatus')}</th></tr></thead><tbody>
+      ${homework.slice().reverse().map(h=>{
+        const st = hwStatuses.find(x=>x.childId===child.id && x.homeworkId===h.id);
+        const val = st?st.status:'pending';
+        const badgeClass = val==='done'?'green':(val==='submitted'?'blue':'yellow');
+        return `<tr><td>${esc(h.title)}<br><span class="muted">${esc(h.description)}</span></td><td class="ltr">${esc(h.dueDate)}</td>
+        <td><span class="badge ${badgeClass}">${lbl(HW_STATUS_STRINGS,val)}</span> ${val==='pending'?`<button class="btn ghost small" onclick="parentMarkSubmitted('${h.id}')">${t('markSubmittedBtn')}</button>`:''}</td></tr>`;
+      }).join('')}
+      </tbody></table>`}
+    </div>
+
+    <div class="card">
+      <h3>${t('quizResultsTitle')}</h3>
+      ${quizResults.length===0 ? `<p class="empty-note">${t('noQuizResultsYet')}</p>` : `<table class="data-table"><thead><tr><th>${t('thQuiz')}</th><th>${t('thScore')}</th><th>${t('thDate')}</th></tr></thead><tbody>
+      ${quizResults.slice().reverse().map(r=>`<tr><td>${esc(r.quizTitle)}</td><td><span class="ltr">${r.score} / ${r.total}</span></td><td class="ltr">${esc(r.date)}</td></tr>`).join('')}
+      </tbody></table>`}
+    </div>
+
+    <div class="card">
+      <h3>${t('reportsTitle')}</h3>
+      ${reportDates.length===0 ? `<p class="empty-note">${t('noReportsSharedYet')}</p>` : `
+      <div class="field"><label class="field-label">${t('chooseDateLabel')}</label><select id="parentReportDate">${reportDates.map(d=>`<option value="${d}">${d}</option>`).join('')}</select></div>
+      <button class="btn ghost small" onclick="parentViewReport('${child.id}')">${t('viewBtn')}</button>
+      <div id="parentReportView" style="margin-top:14px;"></div>`}
+    </div>
+  `;
+}
+async function parentMarkSubmitted(hwId){
+  const s = getSession();
+  let statuses = await getHwStatus();
+  const idx = statuses.findIndex(x=>x.childId===s.childId && x.homeworkId===hwId);
+  const record = {id: idx>-1?statuses[idx].id:uid(), childId:s.childId, homeworkId:hwId, status:'submitted', date:todayISO()};
+  if(idx>-1) statuses[idx] = record; else statuses.push(record);
+  await saveHwStatus(statuses);
+  renderParentView();
+}
+async function parentViewReport(childId){
+  const date = document.getElementById('parentReportDate').value;
+  const report = await getReport(childId, date);
+  const children = await getChildren();
+  const classes = await getClasses();
+  const teachers = await getTeachers();
+  const child = children.find(c=>c.id===childId);
+  const cls = classes.find(c=>c.id===child.classId);
+  const teacherName = (teachers.find(tc=>tc.id===cls.teacherId)||{}).name || '—';
+  REPORT_STATE = report || blankReportState();
+  REPORT_CTX = {childId, childName:child.name, className:cls.name, teacherName, date};
+  const s = REPORT_STATE;
+  const moodList = s.mood.length ? s.mood.map(m=>lbl(MOOD_STRINGS,m)).join('، ') : '—';
+  document.getElementById('parentReportView').innerHTML = `
+    <p><b>${t('moodLabel')}</b> ${esc(moodList)}</p>
+    <p><b>${t('notesForParentsColon')}</b> ${fieldOrEmpty(s.notesForParents)}</p>
+    <button class="btn ghost small" onclick="printReport()">${t('printBtn')}</button>
+  `;
+}
+
+/* ===================== INIT ===================== */
+boot();
+</script>
+</body>
+</html>
